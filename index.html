@@ -229,7 +229,6 @@ body.toc-open{overflow:hidden}
 .tg-exec div{border-top:1px solid #ECE3CF;padding-top:8px}
 .tg-exec dt{font:12px/1.5 var(--f-ui);letter-spacing:.2em;color:var(--gold)}
 .tg-exec dd{font:400 21px/1.4 var(--f-display);color:var(--navy)}
-.tg-exec .top dd{font-size:30px}
 .tg-names{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 12px}
 .tg-names li{display:flex;flex-direction:column}
 .tg-names b{font:400 18px/1.4 var(--f-display);color:var(--ink)}
@@ -266,7 +265,7 @@ body.toc-open{overflow:hidden}
 .ad-person b{display:block;font:400 20px/1.4 var(--f-display);color:var(--navy)}
 .ad-person em{display:block;font:13px/1.5 var(--f-ui);font-style:normal;color:var(--gold)}
 .ad-person span{display:block;font-size:14.5px;line-height:1.6}
-.ad-cut{width:62%;margin:16px 0 0 auto}
+.ad-cut{display:block;width:auto;max-width:62%;max-height:min(52vh,440px);object-fit:contain;margin:16px 0 0 auto}   /* 10-31 竖长图（DMG 喷淋）在电脑上会撑满屏幕：限高 */
 .ad-stats{display:flex;margin-top:18px;border-top:1px solid #ECE3CF;border-bottom:1px solid #ECE3CF}
 .ad-stats div{flex:1;padding:12px 8px}
 .ad-stats div + div{border-left:1px solid #ECE3CF}
@@ -510,6 +509,20 @@ body.toc-open{overflow:hidden}
 .pr-y{display:block;font:400 15px/1.2 var(--f-display);font-style:normal;color:var(--gold);letter-spacing:.06em;margin-bottom:2px}
 .ad-reg-note{margin-top:14px;font:13px/1.6 var(--f-ui);color:var(--muted)}
 
+/* ── 10-31 电脑上图片过大（逐张实测 1440×900 / 1280×720）── */
+.ad-imgs.n1.whole img{aspect-ratio:auto;height:auto}          /* 单张广告图按原比例，不再补成白色正方形（WGO） */
+@media (min-width:760px){
+  .ad-imgs.n1.whole img{max-height:60vh;width:auto;max-width:100%;margin:0 auto;background:none}
+  .es-fig img,.es-fig.tall img{width:auto;max-width:100%;max-height:72vh;margin:0 auto}   /* 校友来稿配图 */
+  .ev-figs .ev-pic.tall img{max-height:68vh}                  /* 活动页竖图 */
+  .evC-hero{max-width:1120px;margin:0 auto}                   /* 活动页头图：不再拉满 1440 宽（小图会放大发虚、竖图被裁成横条） */
+  .evC-hero img{height:68vh;object-position:center 35%}
+  .evC-hero.wide img{height:auto;max-height:68vh}
+}
+/* 11-01 分会专页单独成节（进目录）：不加「感谢支持」，上边不画线 */
+.ads.branch{padding-top:72px}
+.ads.branch .ad{border-top:0;padding-top:0}
+
 </style>
 </head>
 <body>
@@ -519,7 +532,7 @@ body.toc-open{overflow:hidden}
   <div class="toc-in">
     <div class="toc-h"><span>交通大学南加州校友会</span><span>八十三周年年会 · 电子年刊</span></div>
     <ol>
-<li><a href="#s01"><i>01</i>贺信</a></li><li><a href="#s02"><i>02</i>致辞</a></li><li><a href="#s04"><i>03</i>节目单</a></li><li><a href="#s06"><i>04</i>奖品</a></li><li><a href="#s08"><i>05</i>一年同行</a></li><li><a href="#s09"><i>06</i>五校一家</a></li><li><a href="#s10"><i>07</i>活力交大</a></li><li><a href="#s12"><i>08</i>薪火相传</a></li><li><a href="#s14"><i>09</i>同心同行</a></li><li><a href="#s15"><i>10</i>校友来稿</a></li><li><a href="#s18"><i>11</i>鸣谢</a></li>    </ol>
+<li><a href="#s01"><i>01</i>贺信</a></li><li><a href="#s02"><i>02</i>致辞</a></li><li><a href="#s04"><i>03</i>节目单</a></li><li><a href="#s06"><i>04</i>奖品</a></li><li><a href="#s08"><i>05</i>一年同行</a></li><li><a href="#s09"><i>06</i>五校一家</a></li><li><a href="#s10"><i>07</i>圣地亚哥</a></li><li><a href="#s11"><i>08</i>活力交大</a></li><li><a href="#s13"><i>09</i>薪火相传</a></li><li><a href="#s15"><i>10</i>同心同行</a></li><li><a href="#s16"><i>11</i>校友来稿</a></li><li><a href="#s19"><i>12</i>鸣谢</a></li>    </ol>
     <button class="toc-close" id="tocClose">关闭</button>
   </div>
 </nav>
@@ -627,8 +640,7 @@ body.toc-open{overflow:hidden}
 
 
 <section class="ads" id="s03" data-entry="08_赞助商广告#2" data-label="赞助 · 交通大学美洲校友总会、老虎国际、WGO 等">
-  <div class="ads-label">感谢支持</div>
-<article class="ad ad-wish">
+<div class="ads-label">感谢支持</div><article class="ad ad-wish">
 <img class="ad-logo center" src="assets/img/ba6146198027.webp" alt="交通大学美洲校友总会" style="width:110px" loading="lazy">  <div class="wish"><div class="w-小">恭祝</div><div class="w-中">交通大学南加州校友会</div><div class="w-大">八十三周年年会</div><div class="w-大">圆满成功</div><div class="w-中">共庆母校一百三十周年华诞</div></div>
 <div class="wish-motto">饮水思源 · 五校一家</div>  <div class="wish-sign">交通大学美洲校友总会　敬贺<span>Chiao-Tung University Alumni Association in America</span></div>
 </article>
@@ -701,8 +713,7 @@ body.toc-open{overflow:hidden}
 
 
 <section class="ads" id="s05" data-entry="08_赞助商广告#4" data-label="赞助 · 北美卡车运输协会、AGENTECH、美国风雷国际集团 等">
-  <div class="ads-label">感谢支持</div>
-<article class="ad">
+<div class="ads-label">感谢支持</div><article class="ad">
   <div class="ad-head">
 <img class="ad-logo" src="assets/img/4c3fa863934e.webp" alt="北美卡车运输协会 NATTA" style="width:230px" loading="lazy" decoding="async">  </div>
 <p class="ad-tag big">AI 找路，专家落地</p><p class="ad-desc">人工智能供应链联盟（AI SCM Alliance）是北美卡车运输协会（NATTA）旗下品牌，连接中国工厂与北美货架，整合跨境供应链资源，以 AI 顾问支持全链协作。</p><dl class="ad-kv"><div><dt>全链</dt><dd>品牌出海 → 货代 → 清关 → 海外仓 → 卡车</dd></div><div><dt>专家</dt><dd>卡车 · 报关 · 货代 · 仓储 · 出海等专业委员会</dd></div></dl><div class="ad-list-h">四大 AI 智能顾问</div><ul class="ad-list two"><li>品略 · 品牌出海</li><li>小关 · 报关</li><li>小安 · 风控</li><li>老关 · 卡车</li></ul><div class="ad-contact"><div><a href="mailto:support@natta.org">support@natta.org</a></div></div><p class="ad-reg-note">目前免费开放 · AI 助手全程陪伴</p><div class="ad-links">
@@ -811,8 +822,7 @@ body.toc-open{overflow:hidden}
 
 
 <section class="ads" id="s07" data-entry="08_赞助商广告#3" data-label="赞助 · 爱跃维、蔓藤教育、Natural 等">
-  <div class="ads-label">感谢支持</div>
-<article class="ad">
+<div class="ads-label">感谢支持</div><article class="ad">
   <div class="ad-head">
 <img class="ad-logo" src="assets/img/ebfb102a2228.webp" alt="爱跃维 PiviaX" style="width:162px" loading="lazy" decoding="async">  </div>
 <p class="ad-tag big">学有所向，业有所成，志有所达。</p><p class="ad-desc">爱跃维（PiviaX）是一家连接升学规划、职业探索与长期成长的教育咨询机构。我们结合招生视角、心理学方法、行业导师经验与 AI 工具，帮助学生认识自己、明确方向，将当下的学习与申请选择，转化为面向未来的发展路径。</p><dl class="ad-kv"><div><dt>升学规划</dt><dd>美高 · 美本 · 研究生：选校、规划与文书</dd></div><div><dt>职业探索</dt><dd>行业交流与导师指导，找到适合的方向</dd></div><div><dt>背景提升</dt><dd>科研 · 竞赛 · 实践，培养表达与思辨能力</dd></div><div><dt>家庭陪伴</dt><dd>帮家长理解孩子，陪学生学会自主决策</dd></div></dl><div class="ad-sign">Beyond College. Discover Careers. Build for Life.</div><div class="ad-contact"><div>尔湾办公室 · 1 Park Plaza, Suite 325, Irvine, CA</div></div><div class="ad-links">
@@ -917,7 +927,21 @@ body.toc-open{overflow:hidden}
 </section>
 
 
-<section class="sec review rv-赛场" id="s10" data-entry="13_回顾_赛场上的交大" data-label="活力交大">
+<section class="ads branch" id="s10" data-entry="08_赞助商广告#1@圣地亚哥校友会" data-label="圣地亚哥">
+<article class="ad ad-chapter">
+  <div class="ad-kick">分会专页 · SAN DIEGO</div>
+  <h3 class="ad-big">圣地亚哥校友会</h3>
+  <div class="ad-chief">
+    <img class="" src="assets/img/38a0e0005b1d.webp" alt="胡景宇" loading="lazy" decoding="async">
+    <div><span class="ad-kick">会长</span><b>胡景宇</b><em>Brandon Hu</em><p>上海交通大学通信工程专业 2000 届本科，后赴美留学，2007 年获德州大学奥斯汀分校电子工程博士学位，现从事高科技半导体芯片设计。</p></div>
+  </div>
+<h4 class="ad-sub-h">这一年</h4>  <p class="ad-desc">圣地亚哥的校友常聚在一起：读书会、专业分享、校友聚会。3 月 29 日，大家在后花园相聚、结伴登山；9 月的读书会围绕 Claire Marin《我们为何渴望安稳，却又想要逃离？》聊归属感，刘律师校友分享了 Anthropic 的股权架构。</p>
+<div class="ad-imgs n2"><figure><img class="" src="assets/img/5aaccb8ddbf6.webp" alt="" loading="lazy" decoding="async" style="object-position:center 8%"><figcaption>3.29 · 后花园校友聚会</figcaption></figure><figure><img class="" src="assets/img/8c1bdfd916af.webp" alt="" loading="lazy" decoding="async" style="object-position:center 80%"><figcaption>9.06 · 读书会</figcaption></figure></div></article>
+
+</section>
+
+
+<section class="sec review rv-赛场" id="s11" data-entry="13_回顾_赛场上的交大" data-label="活力交大">
   <header class="ch">
 <div class="ch-kicker">年度回顾</div>  <h2 class="ch-title">活力交大<b class="seal">叁</b></h2>
 <div class="ch-sub"><span>文体俱乐部</span></div></header>
@@ -963,9 +987,8 @@ body.toc-open{overflow:hidden}
 </section>
 
 
-<section class="ads" id="s11" data-entry="08_赞助商广告#6" data-label="赞助 · 友情赞助、QT、ACO 等">
-  <div class="ads-label">感谢支持</div>
-<article class="ad ad-names">
+<section class="ads" id="s12" data-entry="08_赞助商广告#6" data-label="赞助 · 友情赞助、QT、ACO 等">
+<div class="ads-label">感谢支持</div><article class="ad ad-names">
   <div class="ad-kick">友情赞助 · 校友</div>
   <div class="names"><img src="assets/img/d76210b023ed.webp" alt="何桂萍" loading="lazy"><img src="assets/img/3c7aaa484b35.webp" alt="罗涛" loading="lazy"><img src="assets/img/03ffcd4258a4.webp" alt="郭辰曦" loading="lazy"><img src="assets/img/2af725965d7d.webp" alt="李力坚" loading="lazy"></div>
 </article>
@@ -1012,7 +1035,7 @@ body.toc-open{overflow:hidden}
 </section>
 
 
-<section class="sec pres" id="s12" data-entry="05_历届会长" data-label="薪火相传">
+<section class="sec pres" id="s13" data-entry="05_历届会长" data-label="薪火相传">
   <header class="ch">
   <h2 class="ch-title">薪火相传</h2>
 <div class="ch-sub"><span>历任会长 · 理事长（按任职年份）</span></div></header>
@@ -1110,9 +1133,8 @@ body.toc-open{overflow:hidden}
 </section>
 
 
-<section class="ads" id="s13" data-entry="08_赞助商广告#5" data-label="赞助 · Longfri、GMCC、AQX 等">
-  <div class="ads-label">感谢支持</div>
-<article class="ad has-imgs">
+<section class="ads" id="s14" data-entry="08_赞助商广告#5" data-label="赞助 · Longfri、GMCC、AQX 等">
+<div class="ads-label">感谢支持</div><article class="ad has-imgs">
   <div class="ad-head">
 <img class="ad-logo" src="assets/img/589e95a63dc7.webp" alt="Longfri" style="width:75px" loading="lazy" decoding="async">  </div>
 <p class="ad-tag">朗弗科技 · 寓意「长久为友，永无止境」</p><p class="ad-desc">Longfri 科技有限公司位于南加州，由两位西安交通大学校友于 2011 年共同创立。两位创始人看到了全球日益增长的防护产品需求，以及聚乙烯纤维在防弹装甲材料中的应用潜力。公司专注于制造防弹装甲，产品面向军警及民用个人安全防护领域。所用聚乙烯纤维由其中一位创始人的关联公司生产。</p><div class="ad-imgs n3 whole"><figure><img class="" src="assets/img/1a8a87885ad8.webp" alt="" loading="lazy" decoding="async"><figcaption>防弹插板</figcaption></figure><figure><img class="" src="assets/img/ba77ddc0c92b.webp" alt="" loading="lazy" decoding="async"><figcaption>防弹衣</figcaption></figure><figure><img class="" src="assets/img/78daf7d2885c.webp" alt="" loading="lazy" decoding="async"><figcaption>防弹头盔</figcaption></figure></div><div class="ad-links">
@@ -1134,7 +1156,7 @@ body.toc-open{overflow:hidden}
 </section>
 
 
-<section class="sec team" id="s14" data-entry="06_团队与俱乐部" data-label="同心同行">
+<section class="sec team" id="s15" data-entry="06_团队与俱乐部" data-label="同心同行">
   <header class="ch">
   <h2 class="ch-title">同心同行</h2>
 <div class="ch-sub"><span>2026 年度优秀校友</span><span>2026 工作团队</span></div></header>
@@ -1157,12 +1179,12 @@ body.toc-open{overflow:hidden}
 </section>
 
 
-<section class="sec essays" id="s15" data-entry="校友来稿" data-label="校友来稿">
+<section class="sec essays" id="s16" data-entry="校友来稿" data-label="校友来稿">
   <header class="ch">
   <h2 class="ch-title">校友来稿</h2>
 <div class="ch-sub"><span>校友的文字与记忆 · 2026</span></div></header>
 
-  <article class="essay" id="s15-1">
+  <article class="essay" id="s16-1">
     <div class="es-no">01</div>
     <h3 class="es-title"><span class="nb">饮水思源，</span><span class="nb">在南加续写交大情缘</span></h3>
     <div class="es-by has-av">
@@ -1181,7 +1203,7 @@ body.toc-open{overflow:hidden}
       <p>回望来路，从西安交大的校园，到南加州的这片土地。当年初到海外，是校友会接纳、帮助了手足无措的我；如今，我也希望尽自己绵薄之力，把这份温暖继续传递下去。环境虽然改变，但“饮水思源、五校同心”的初心从未动摇。未来，我愿继续和广大校友并肩前行，守望相助，在大洋彼岸，守护好这个交大人的港湾，把交大精神代代接续传承。</p>
 <figure class="es-fig"><img class="" src="assets/img/b0fbb31ae169.webp" alt="西安交通大学校门前" loading="lazy" decoding="async"><figcaption>西安交通大学校门前</figcaption></figure>    </div>
   </article>
-  <article class="essay" id="s15-2">
+  <article class="essay" id="s16-2">
     <div class="es-no">02</div>
     <h3 class="es-title"><span class="nb">交大第一天</span></h3>
     <div class="es-by has-av">
@@ -1246,19 +1268,8 @@ body.toc-open{overflow:hidden}
 </section>
 
 
-<section class="ads" id="s16" data-entry="08_赞助商广告#1" data-label="赞助 · 圣地亚哥校友会、Love、美盈证券">
-  <div class="ads-label">感谢支持</div>
-<article class="ad ad-chapter">
-  <div class="ad-kick">分会专页 · SAN DIEGO</div>
-  <h3 class="ad-big">圣地亚哥校友会</h3>
-  <div class="ad-chief">
-    <img class="" src="assets/img/38a0e0005b1d.webp" alt="胡景宇" loading="lazy" decoding="async">
-    <div><span class="ad-kick">会长</span><b>胡景宇</b><em>Brandon Hu</em><p>上海交通大学通信工程专业 2000 届本科，后赴美留学，2007 年获德州大学奥斯汀分校电子工程博士学位，现从事高科技半导体芯片设计。</p></div>
-  </div>
-<h4 class="ad-sub-h">这一年</h4>  <p class="ad-desc">圣地亚哥的校友常聚在一起：读书会、专业分享、校友聚会。3 月 29 日，大家在后花园相聚、结伴登山；9 月的读书会围绕 Claire Marin《我们为何渴望安稳，却又想要逃离？》聊归属感，刘律师校友分享了 Anthropic 的股权架构。</p>
-<div class="ad-imgs n2"><figure><img class="" src="assets/img/5aaccb8ddbf6.webp" alt="" loading="lazy" decoding="async" style="object-position:center 8%"><figcaption>3.29 · 后花园校友聚会</figcaption></figure><figure><img class="" src="assets/img/8c1bdfd916af.webp" alt="" loading="lazy" decoding="async" style="object-position:center 80%"><figcaption>9.06 · 读书会</figcaption></figure></div></article>
-
-<article class="ad">
+<section class="ads" id="s17" data-entry="08_赞助商广告#1" data-label="赞助 · Love、美盈证券">
+<div class="ads-label">感谢支持</div><article class="ad">
   <div class="ad-head">
 <img class="ad-logo" src="assets/img/256fe77ce121.webp" alt="Love Hibachi" style="width:63px" loading="lazy" decoding="async">  </div>
 <p class="ad-tag big">一个平台，承包整场派对。</p><p class="ad-desc">Love Hibachi 是一家以互联网与 AI 技术驱动的派对聚合预约服务平台。我们以“派对”为场景入口，将餐饮宴会、演艺娱乐、灯光音响、场景美陈、桌椅租赁等分散的派对服务聚合于一个平台——让客户一次预订、全程无忧；让优质服务商获得稳定订单与数字化增长。我们正在重新定义北美家庭聚会的消费方式。</p><div class="ad-list-h">全场景派对服务</div><ul class="ad-list two"><li>餐饮宴会</li><li>主厨现场秀</li><li>演艺娱乐</li><li>灯光音响</li><li>场景美陈</li><li>桌椅租赁</li></ul><p class="ad-wishline">谨祝交通大学南加州校友会八十三周年年会圆满成功 · 恭贺母校 130 周年华诞</p><div class="ad-contact"><div><a href="tel:6192897941">(619) 289-7941</a></div></div><div class="ad-links">
@@ -1271,7 +1282,7 @@ body.toc-open{overflow:hidden}
 </section>
 
 
-<section class="ads back" id="s17" data-entry="09_封底" data-label="赞助 · 封底 松馨園">
+<section class="ads back" id="s18" data-entry="09_封底" data-label="赞助 · 封底 松馨園">
   <div class="ads-label">本页由何桂萍注册会计师赞助</div>
   <img class="bk-hero" src="assets/img/8b2dd809eeb7.webp" alt="松馨園" loading="lazy" decoding="async">
   <article class="ad bk">
@@ -1300,7 +1311,7 @@ body.toc-open{overflow:hidden}
   </section>
 </section>
 
-<section class="sec thanks" id="s18" data-entry="赞助鸣谢" data-label="鸣谢">
+<section class="sec thanks" id="s19" data-entry="赞助鸣谢" data-label="鸣谢">
   <header class="ch">
   <h2 class="ch-title">鸣谢</h2>
 <div class="ch-sub"><span>感谢各位赞助商与校友对本届年会的支持</span></div></header>

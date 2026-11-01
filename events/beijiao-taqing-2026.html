@@ -227,7 +227,6 @@ body.toc-open{overflow:hidden}
 .tg-exec div{border-top:1px solid #ECE3CF;padding-top:8px}
 .tg-exec dt{font:12px/1.5 var(--f-ui);letter-spacing:.2em;color:var(--gold)}
 .tg-exec dd{font:400 21px/1.4 var(--f-display);color:var(--navy)}
-.tg-exec .top dd{font-size:30px}
 .tg-names{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 12px}
 .tg-names li{display:flex;flex-direction:column}
 .tg-names b{font:400 18px/1.4 var(--f-display);color:var(--ink)}
@@ -264,7 +263,7 @@ body.toc-open{overflow:hidden}
 .ad-person b{display:block;font:400 20px/1.4 var(--f-display);color:var(--navy)}
 .ad-person em{display:block;font:13px/1.5 var(--f-ui);font-style:normal;color:var(--gold)}
 .ad-person span{display:block;font-size:14.5px;line-height:1.6}
-.ad-cut{width:62%;margin:16px 0 0 auto}
+.ad-cut{display:block;width:auto;max-width:62%;max-height:min(52vh,440px);object-fit:contain;margin:16px 0 0 auto}   /* 10-31 竖长图（DMG 喷淋）在电脑上会撑满屏幕：限高 */
 .ad-stats{display:flex;margin-top:18px;border-top:1px solid #ECE3CF;border-bottom:1px solid #ECE3CF}
 .ad-stats div{flex:1;padding:12px 8px}
 .ad-stats div + div{border-left:1px solid #ECE3CF}
@@ -508,6 +507,20 @@ body.toc-open{overflow:hidden}
 .pr-y{display:block;font:400 15px/1.2 var(--f-display);font-style:normal;color:var(--gold);letter-spacing:.06em;margin-bottom:2px}
 .ad-reg-note{margin-top:14px;font:13px/1.6 var(--f-ui);color:var(--muted)}
 
+/* ── 10-31 电脑上图片过大（逐张实测 1440×900 / 1280×720）── */
+.ad-imgs.n1.whole img{aspect-ratio:auto;height:auto}          /* 单张广告图按原比例，不再补成白色正方形（WGO） */
+@media (min-width:760px){
+  .ad-imgs.n1.whole img{max-height:60vh;width:auto;max-width:100%;margin:0 auto;background:none}
+  .es-fig img,.es-fig.tall img{width:auto;max-width:100%;max-height:72vh;margin:0 auto}   /* 校友来稿配图 */
+  .ev-figs .ev-pic.tall img{max-height:68vh}                  /* 活动页竖图 */
+  .evC-hero{max-width:1120px;margin:0 auto}                   /* 活动页头图：不再拉满 1440 宽（小图会放大发虚、竖图被裁成横条） */
+  .evC-hero img{height:68vh;object-position:center 35%}
+  .evC-hero.wide img{height:auto;max-height:68vh}
+}
+/* 11-01 分会专页单独成节（进目录）：不加「感谢支持」，上边不画线 */
+.ads.branch{padding-top:72px}
+.ads.branch .ad{border-top:0;padding-top:0}
+
 </style>
 </head>
 <body class="ev ev-一天">
@@ -546,9 +559,9 @@ body.toc-open{overflow:hidden}
 <h2 class="evC-label"><i></i>结语</h2><p class="ev-p">本次3·15赏花踏青活动，紧扣母校130周年校庆主题，兼具户外休闲与校庆纪念意义，既丰富了南加州校友的业余生活，也进一步凝聚了校友情谊、传承了交大精神，圆满实现了校友相聚交流、共庆校庆的初衷。活动的顺利开展，离不开各位校友的积极参与与大力支持，也充分体现了南加州校友会的凝聚力。</p>
   </section>
   <section class="evC-ch extra">
-<h2 class="evC-label"><i></i>更多照片 · 8 张</h2><figure class="ev-swipe">
-  <div class="sw-track"><div class="sw-slide" data-cap=""><a class="ev-pic " href="../assets/img/37ca3763a4df.webp" data-i="5"><img src="../assets/img/37ca3763a4df.webp" alt="" loading="lazy" decoding="async"></a></div><div class="sw-slide" data-cap=""><a class="ev-pic " href="../assets/img/2d857aceeda9.webp" data-i="6"><img src="../assets/img/2d857aceeda9.webp" alt="" loading="lazy" decoding="async"></a></div><div class="sw-slide" data-cap=""><a class="ev-pic " href="../assets/img/e472cdbe6b80.webp" data-i="7"><img src="../assets/img/e472cdbe6b80.webp" alt="" loading="lazy" decoding="async"></a></div><div class="sw-slide" data-cap=""><a class="ev-pic " href="../assets/img/e72a453daf2f.webp" data-i="8"><img src="../assets/img/e72a453daf2f.webp" alt="" loading="lazy" decoding="async"></a></div><div class="sw-slide" data-cap=""><a class="ev-pic tall " href="../assets/img/2ae12daf360a.webp" data-i="9"><img src="../assets/img/2ae12daf360a.webp" alt="" loading="lazy" decoding="async"></a></div><div class="sw-slide" data-cap=""><a class="ev-pic " href="../assets/img/1926f98b59c1.webp" data-i="10"><img src="../assets/img/1926f98b59c1.webp" alt="" loading="lazy" decoding="async"></a></div><div class="sw-slide" data-cap=""><a class="ev-pic " href="../assets/img/1ab6051edcec.webp" data-i="11"><img src="../assets/img/1ab6051edcec.webp" alt="" loading="lazy" decoding="async"></a></div><div class="sw-slide" data-cap=""><a class="ev-pic " href="../assets/img/f8af37140cc5.webp" data-i="12"><img src="../assets/img/f8af37140cc5.webp" alt="" loading="lazy" decoding="async"></a></div></div>
-  <div class="sw-meta"><span class="sw-n">1 / 8</span><span class="sw-hint">左右滑动看这一组</span><span class="sw-btns"><button class="sw-b" data-d="-1" aria-label="上一张">‹</button><button class="sw-b" data-d="1" aria-label="下一张">›</button></span></div>
+<h2 class="evC-label"><i></i>更多照片 · 2 张</h2><figure class="ev-swipe">
+  <div class="sw-track"><div class="sw-slide" data-cap=""><a class="ev-pic " href="../assets/img/37ca3763a4df.webp" data-i="5"><img src="../assets/img/37ca3763a4df.webp" alt="" loading="lazy" decoding="async"></a></div><div class="sw-slide" data-cap=""><a class="ev-pic " href="../assets/img/e472cdbe6b80.webp" data-i="6"><img src="../assets/img/e472cdbe6b80.webp" alt="" loading="lazy" decoding="async"></a></div></div>
+  <div class="sw-meta"><span class="sw-n">1 / 2</span><span class="sw-hint">左右滑动看这一组</span><span class="sw-btns"><button class="sw-b" data-d="-1" aria-label="上一张">‹</button><button class="sw-b" data-d="1" aria-label="下一张">›</button></span></div>
 </figure>  </section>
   <div class="ev-src">原文刊于公众号「交大南加州校友之声」</div>
 </article>
@@ -567,7 +580,7 @@ body.toc-open{overflow:hidden}
 </div>
 <script>
 (function () {
-  var G = ["assets/img/d53b9a30856b.webp", "assets/img/2b3f9996965f.webp", "assets/img/1f4d42bc5d4b.webp", "assets/img/400ef7d82ad3.webp", "assets/img/48c21460cdcf.webp", "assets/img/37ca3763a4df.webp", "assets/img/2d857aceeda9.webp", "assets/img/e472cdbe6b80.webp", "assets/img/e72a453daf2f.webp", "assets/img/2ae12daf360a.webp", "assets/img/1926f98b59c1.webp", "assets/img/1ab6051edcec.webp", "assets/img/f8af37140cc5.webp"], C = ["Chino Hills State Park \u95e8\u53e3\uff0c\u5317\u4ea4\u6821\u53cb\u624b\u6301\u6821\u65d7\u5408\u5f71\u3002", "\u5c71\u810a\u6b65\u9053", "Chino Hills \u6625\u65e5\u5c71\u666f", "\u300c\u540c\u4f20\u4e00\u9762\u65d7\u300d\uff1a\u5c71\u9876\u624b\u6301\u5317\u4eac\u4ea4\u901a\u5927\u5b66\u6821\u65d7\u5408\u5f71", "\u5c71\u9876\u5408\u5f71", "", "", "", "", "", "", "", ""];
+  var G = ["assets/img/d53b9a30856b.webp", "assets/img/2b3f9996965f.webp", "assets/img/1f4d42bc5d4b.webp", "assets/img/400ef7d82ad3.webp", "assets/img/48c21460cdcf.webp", "assets/img/37ca3763a4df.webp", "assets/img/e472cdbe6b80.webp"], C = ["Chino Hills State Park \u95e8\u53e3\uff0c\u5317\u4ea4\u6821\u53cb\u624b\u6301\u6821\u65d7\u5408\u5f71\u3002", "\u5c71\u810a\u6b65\u9053", "Chino Hills \u6625\u65e5\u5c71\u666f", "\u300c\u540c\u4f20\u4e00\u9762\u65d7\u300d\uff1a\u5c71\u9876\u624b\u6301\u5317\u4eac\u4ea4\u901a\u5927\u5b66\u6821\u65d7\u5408\u5f71", "\u5c71\u9876\u5408\u5f71", "", ""];
   var box = document.getElementById('gal'), img = document.getElementById('galImg'), n = document.getElementById('galN'), cap = document.getElementById('galCap'), i = 0;
   function show(k) { i = (k + G.length) % G.length; img.src = '../' + G[i]; img.alt = C[i]; n.textContent = (i + 1) + ' / ' + G.length; cap.textContent = C[i] || ''; }
   function open(k) { show(k); box.hidden = false; document.body.classList.add('toc-open'); try { history.pushState({ g: 1 }, ''); } catch (e) {} }

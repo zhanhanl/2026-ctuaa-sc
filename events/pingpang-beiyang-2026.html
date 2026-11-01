@@ -227,7 +227,6 @@ body.toc-open{overflow:hidden}
 .tg-exec div{border-top:1px solid #ECE3CF;padding-top:8px}
 .tg-exec dt{font:12px/1.5 var(--f-ui);letter-spacing:.2em;color:var(--gold)}
 .tg-exec dd{font:400 21px/1.4 var(--f-display);color:var(--navy)}
-.tg-exec .top dd{font-size:30px}
 .tg-names{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 12px}
 .tg-names li{display:flex;flex-direction:column}
 .tg-names b{font:400 18px/1.4 var(--f-display);color:var(--ink)}
@@ -264,7 +263,7 @@ body.toc-open{overflow:hidden}
 .ad-person b{display:block;font:400 20px/1.4 var(--f-display);color:var(--navy)}
 .ad-person em{display:block;font:13px/1.5 var(--f-ui);font-style:normal;color:var(--gold)}
 .ad-person span{display:block;font-size:14.5px;line-height:1.6}
-.ad-cut{width:62%;margin:16px 0 0 auto}
+.ad-cut{display:block;width:auto;max-width:62%;max-height:min(52vh,440px);object-fit:contain;margin:16px 0 0 auto}   /* 10-31 竖长图（DMG 喷淋）在电脑上会撑满屏幕：限高 */
 .ad-stats{display:flex;margin-top:18px;border-top:1px solid #ECE3CF;border-bottom:1px solid #ECE3CF}
 .ad-stats div{flex:1;padding:12px 8px}
 .ad-stats div + div{border-left:1px solid #ECE3CF}
@@ -508,12 +507,26 @@ body.toc-open{overflow:hidden}
 .pr-y{display:block;font:400 15px/1.2 var(--f-display);font-style:normal;color:var(--gold);letter-spacing:.06em;margin-bottom:2px}
 .ad-reg-note{margin-top:14px;font:13px/1.6 var(--f-ui);color:var(--muted)}
 
+/* ── 10-31 电脑上图片过大（逐张实测 1440×900 / 1280×720）── */
+.ad-imgs.n1.whole img{aspect-ratio:auto;height:auto}          /* 单张广告图按原比例，不再补成白色正方形（WGO） */
+@media (min-width:760px){
+  .ad-imgs.n1.whole img{max-height:60vh;width:auto;max-width:100%;margin:0 auto;background:none}
+  .es-fig img,.es-fig.tall img{width:auto;max-width:100%;max-height:72vh;margin:0 auto}   /* 校友来稿配图 */
+  .ev-figs .ev-pic.tall img{max-height:68vh}                  /* 活动页竖图 */
+  .evC-hero{max-width:1120px;margin:0 auto}                   /* 活动页头图：不再拉满 1440 宽（小图会放大发虚、竖图被裁成横条） */
+  .evC-hero img{height:68vh;object-position:center 35%}
+  .evC-hero.wide img{height:auto;max-height:68vh}
+}
+/* 11-01 分会专页单独成节（进目录）：不加「感谢支持」，上边不画线 */
+.ads.branch{padding-top:72px}
+.ads.branch .ad{border-top:0;padding-top:0}
+
 </style>
 </head>
 <body class="ev ev-一天">
 
 <nav class="ev-bar">
-  <a href="../index.html#s10">← 返回年刊</a>
+  <a href="../index.html#s11">← 返回年刊</a>
   <span>八十三周年年会 · 电子年刊</span>
 </nav>
 
@@ -546,7 +559,7 @@ body.toc-open{overflow:hidden}
 <nav class="ev-pn">
 <a class="prev" href="tuanbai-2026.html"><i>← 上一个活动</i><span>2026.02.22</span>新春团拜暨年初理事会</a><a class="next" href="beijiao-taqing-2026.html"><i>下一个活动 →</i><span>2026.03.15</span>北京交大踏春赏花</a></nav>
 <footer class="ev-foot">
-  <a href="../index.html#s10">← 返回年刊</a>
+  <a href="../index.html#s11">← 返回年刊</a>
   <div class="ev-foot-org">交通大学南加州校友会</div>
 </footer>
 
