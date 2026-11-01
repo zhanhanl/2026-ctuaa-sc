@@ -1,0 +1,1354 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>交通大学南加州校友会 · 八十三周年年会 · 电子年刊</title>
+<meta name="description" content="百卅交大薪火传，南加五交谊新篇 —— 2026 年 11 月 8 日 · 圣盖博喜来登酒店">
+<meta property="og:title" content="交通大学南加州校友会 · 八十三周年年会 · 电子年刊">
+<meta property="og:description" content="百卅交大薪火传，南加五交谊新篇 —— 2026 年 11 月 8 日 · 圣盖博喜来登酒店">
+<meta name="theme-color" content="#0A1C3F">
+<link rel="stylesheet" href="assets/fonts.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/fonts.css"></noscript>
+<style>
+/* 电子年刊 · 网页版（手机优先）
+   颜色、字体照「设计规范.md」：海军蓝主色、金色细线点缀、中国红只做印章。
+   不用圆角卡片、阴影、渐变按钮；章节靠大标题、留白和细金线分隔。 */
+:root{
+  --navy:#02357A; --deep:#0A1C3F; --ink:#1E2633; --muted:#6E6758;
+  --gold:#B8902A; --gold-l:#D9B85C; --gold-line:#DCCB9C; --paper:#FAF7F0; --sheet:#FFFDF8;
+  --red:#B3202A;
+  --f-display:"Display","Songti SC","Noto Serif SC",serif;
+  --f-text:"ZhiSong","Songti SC","Noto Serif SC",serif;
+  --f-ui:"XiHei","PingFang SC","Noto Sans SC",sans-serif;
+  --f-brush:"Brush","Display",serif;
+  --gut:20px; --col:680px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:12px}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.85 var(--f-text);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--navy);text-decoration-color:var(--gold-line);text-underline-offset:3px}
+h1,h2,h3,h4,p,figure,blockquote,ol,ul,dl,dd{margin:0}
+ol,ul{padding:0;list-style:none}
+main{overflow:hidden}
+
+/* ── 章节通用 ── */
+.sec,.ads{max-width:var(--col);margin:0 auto;padding:72px var(--gut) 24px}
+.ch{margin-bottom:40px}
+.ch-kicker{font:13px/1.4 var(--f-ui);letter-spacing:.32em;color:var(--gold);margin-bottom:10px}
+.ch-title{font:400 46px/1.15 var(--f-display);color:var(--navy);letter-spacing:.06em;display:flex;align-items:center;gap:14px}
+.ch-sub{margin-top:14px;padding-top:12px;border-top:1px solid var(--gold-line);font:13px/1.7 var(--f-ui);letter-spacing:.12em;color:var(--muted);display:flex;flex-wrap:wrap;column-gap:1.4em}
+.seal{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;background:var(--red);color:#FFF6E8;font:400 19px/1 var(--f-display);border-radius:3px;transform:rotate(-4deg)}
+
+/* ── 目录 ── */
+.toc-btn{position:fixed;top:max(12px,env(safe-area-inset-top));right:12px;z-index:20;border:1px solid var(--gold);background:var(--deep);color:#F2E3B8;font:14px/1 var(--f-ui);letter-spacing:.3em;padding:10px 10px 10px 14px;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s}
+.toc-btn.show{opacity:1;pointer-events:auto}
+.toc{position:fixed;inset:0;z-index:30;background:var(--deep);color:#F4EBD3;overflow:auto}
+.toc-in{max-width:var(--col);margin:0 auto;padding:64px 28px 40px}
+.toc-h{display:flex;flex-direction:column;gap:4px;font:13px/1.6 var(--f-ui);letter-spacing:.24em;color:var(--gold-l);padding-bottom:18px;border-bottom:1px solid rgba(217,184,92,.4);margin-bottom:12px}
+.toc li a{display:flex;align-items:baseline;gap:18px;padding:13px 0;color:#F6EEDA;text-decoration:none;font:400 26px/1.3 var(--f-display);letter-spacing:.08em;border-bottom:1px solid rgba(217,184,92,.16)}
+.toc li a i{font:13px/1 var(--f-ui);font-style:normal;color:var(--gold-l);letter-spacing:.1em;width:22px}
+.toc-close{margin-top:28px;background:none;border:1px solid rgba(217,184,92,.6);color:var(--gold-l);font:14px/1 var(--f-ui);letter-spacing:.3em;padding:12px 16px 12px 20px;cursor:pointer}
+body.toc-open{overflow:hidden}
+
+/* ── 封面 ── */
+.cover{position:relative;min-height:100vh;min-height:100svh;color:#fff;display:flex;flex-direction:column;overflow:hidden;background:#021A44}
+.cv-bg{position:absolute;inset:0;background-size:cover;background-position:center 78%}
+.cv-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,22,60,.55) 0%,rgba(2,22,60,.08) 38%,rgba(2,22,60,.25) 70%,rgba(2,18,48,.78) 100%)}
+.cv-top,.cv-main,.cv-foot{position:relative;z-index:1}
+.cv-top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:max(22px,env(safe-area-inset-top)) var(--gut) 0}
+.cv-emblem{width:64px}
+.cv-schools{width:min(58vw,300px)}
+.cv-main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:30px var(--gut) 10px}
+.cv-year{font:400 22px/1 var(--f-display);letter-spacing:.3em;color:var(--gold-l)}
+.cv-title{margin-top:12px;white-space:nowrap;font:400 clamp(36px,10.6vw,84px)/1.08 var(--f-display);letter-spacing:.06em;background:linear-gradient(180deg,#FFF4C8,#F2D47C 40%,#C8982C 78%,#F6E0A0);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 2px 4px rgba(0,10,40,.45))}
+.cv-org{margin-top:16px;font:15px/1.6 var(--f-ui);letter-spacing:.42em;color:#E9EEF7}
+.cv-130{margin-top:34px;width:min(62vw,300px)}
+.cv-130 svg{display:block;width:100%;height:auto}
+.cv-years{display:flex;align-items:center;gap:12px;margin-top:6px;font:400 17px/1 var(--f-display);color:var(--gold-l);letter-spacing:.14em}
+.cv-years i{flex:1;max-width:80px;border-top:1px solid var(--gold-l)}
+.cv-couplet{margin-top:34px;font:400 clamp(24px,7vw,40px)/1.5 var(--f-brush);color:#F6DE9A;letter-spacing:.12em;text-shadow:0 2px 6px rgba(0,20,60,.5)}
+.cv-couplet div:nth-child(2){padding-left:2em}
+.cv-foot{padding:18px var(--gut) max(22px,env(safe-area-inset-bottom));font:13px/1.7 var(--f-ui);letter-spacing:.14em;color:#DCE4F2}
+.cv-down{display:inline-block;margin-top:14px;color:var(--gold-l);text-decoration:none;letter-spacing:.4em;border-bottom:1px solid var(--gold-l);padding-bottom:4px}
+
+/* ── 贺信 ── */
+.letter{background:var(--sheet);border:1px solid #E8DFC9;padding:28px 22px 26px;margin:0 calc(var(--gut) * -0.4) 40px}
+.lt-head{margin:-6px 0 22px;padding-bottom:16px;border-bottom:1px solid #EFE6D2}
+.lt-head img{max-height:84px;width:auto;margin:0 auto}
+.lt-from{font:400 26px/1.35 var(--f-display);color:var(--navy);letter-spacing:.06em;margin-bottom:18px}
+.lt-from span{display:block;margin-top:4px;font:14px/1.5 var(--f-ui);letter-spacing:.2em;color:var(--muted)}
+.lt-body p{text-indent:2em;margin-bottom:.9em;text-align:justify}
+.lt-body p.lt-greet{text-indent:0;font-weight:600}
+.letter.trad .lt-body p{letter-spacing:.01em}
+.lt-sign{position:relative;display:flex;justify-content:flex-end;margin-top:26px;padding:10px 0 6px}
+.lt-sign-t{position:relative;z-index:1;text-align:right;font:15px/1.9 var(--f-text);color:var(--ink)}
+.lt-seal{position:absolute;z-index:2;right:6px;top:50%;transform:translateY(-50%);width:112px;pointer-events:none}
+.trad .lt-sign{padding-bottom:14px}
+.trad .lt-seal{width:124px;right:auto;left:6%;top:auto;bottom:-4px;transform:none}
+.lt-origs{display:flex;align-items:flex-end;flex-wrap:wrap;gap:12px 22px;margin-top:22px;padding-top:16px;border-top:1px solid #EFE6D2}
+.lt-orig{display:flex;align-items:flex-end;gap:12px;text-decoration:none;color:var(--gold)}
+.lt-thumb{width:58px;height:auto;border:1px solid #E3D8BF}
+.lt-orig span,.lt-pdf{font:13px/1 var(--f-ui);letter-spacing:.24em;color:var(--gold);border-bottom:1px solid var(--gold-line);padding-bottom:4px;text-decoration:none}
+/* 原件查看层 */
+.viewer{position:fixed;inset:0;z-index:40;background:#0B1424;display:flex;flex-direction:column}
+.viewer[hidden]{display:none}
+.vw-bar{display:flex;align-items:center;gap:16px;padding:max(12px,env(safe-area-inset-top)) 14px 12px;color:#E9DFC4;font:13px/1.4 var(--f-ui);letter-spacing:.1em;border-bottom:1px solid rgba(217,184,92,.3)}
+.vw-title{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.vw-dl{color:var(--gold-l);text-decoration:none;letter-spacing:.2em}
+.vw-close{background:none;border:1px solid rgba(217,184,92,.6);color:var(--gold-l);font:13px/1 var(--f-ui);letter-spacing:.3em;padding:9px 10px 9px 14px;cursor:pointer}
+.vw-scroll{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;padding:14px 10px max(24px,env(safe-area-inset-bottom))}
+.vw-scroll img{width:100%;max-width:900px;margin:0 auto;background:#fff;cursor:zoom-in}
+.vw-scroll img.zoom{width:auto;max-width:none;cursor:zoom-out}
+
+/* ── 校友来稿 ── */
+.essay{padding-top:8px;margin-bottom:64px}
+.essay + .essay{padding-top:40px;border-top:1px solid var(--gold-line)}
+.es-title .nb{display:inline-block}
+.es-no{font:400 15px/1 var(--f-display);color:var(--gold);letter-spacing:.1em}
+.es-title{margin-top:10px;font:400 30px/1.4 var(--f-display);color:var(--navy);letter-spacing:.04em}
+.es-by{margin:16px 0 28px;display:flex;align-items:center;gap:14px}
+.es-av{width:56px;height:56px;border-radius:50%;object-fit:cover;flex:none;border:1px solid var(--gold-line)}
+.es-by-t{display:flex;flex-direction:column;gap:1px}
+.es-by b{font:400 18px/1.45 var(--f-display);color:var(--ink);letter-spacing:.12em;margin-bottom:2px}
+.es-by span{font:13px/1.55 var(--f-ui);color:var(--muted);letter-spacing:.06em}
+.es-by span.l2{color:var(--gold)}
+.es-body p{text-indent:2em;margin-bottom:.85em;text-align:justify}
+.es-fig{margin:26px calc(var(--gut) * -1) 28px}
+.es-fig img{width:100%;height:auto}
+.es-fig.tall{margin-left:0;margin-right:0}
+.es-fig.tall img{width:auto;max-width:100%;max-height:78vh;margin:0 auto}
+.es-fig figcaption{margin-top:8px;padding:0 var(--gut);font:12.5px/1.5 var(--f-ui);color:var(--muted);letter-spacing:.06em}
+.es-fig.tall figcaption{padding:0;text-align:center}
+@media (min-width:760px){.es-fig{margin-left:-40px;margin-right:-40px}.es-fig figcaption{padding:0 40px}.es-fig.tall{margin-left:0;margin-right:0}}
+
+/* ── 致辞 ── */
+.sp{margin-bottom:56px}
+.sp-who{display:grid;grid-template-columns:42% 1fr;gap:18px;align-items:end;margin-bottom:22px}
+.sp-photo{width:100%;aspect-ratio:4/5;object-fit:cover}
+.sp-who figcaption{display:flex;flex-direction:column;gap:4px;padding-bottom:4px}
+.sp-role{font:13px/1.4 var(--f-ui);letter-spacing:.32em;color:var(--gold)}
+.sp-name{font:400 34px/1.2 var(--f-display);color:var(--navy);letter-spacing:.1em}
+.sp-bio{font:12.5px/1.6 var(--f-ui);color:var(--muted)}
+.sp-quote{font:400 21px/1.6 var(--f-display);color:var(--navy);padding:4px 0 18px;margin-bottom:18px;border-bottom:1px solid var(--gold-line)}
+.sp-text p{text-indent:2em;margin-bottom:.8em;text-align:justify}
+.sp-2 .sp-who{grid-template-columns:1fr 42%}
+.sp-2 .sp-who .sp-photo{order:2}
+.sp-2 .sp-who figcaption{text-align:right}
+.sky{margin-top:24px;text-align:center;color:var(--gold)}
+.sky-t{font:400 20px/1.2 var(--f-display);letter-spacing:.6em;text-indent:.6em;color:var(--navy);margin-bottom:14px}
+.sky-art svg{display:block;width:100%;height:auto}
+.sky-s{margin-top:10px;font:11px/1.6 var(--f-ui);letter-spacing:.2em;color:var(--muted)}
+
+/* ── 节目单 ── */
+.pg-sec{margin-bottom:30px}
+.pg-h{display:flex;align-items:center;gap:12px;font:400 23px/1.3 var(--f-display);color:var(--navy);letter-spacing:.1em;margin-bottom:6px}
+.pg-num{width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--gold);color:var(--gold);font:400 16px/1 var(--f-display)}
+.pg-list li{display:grid;grid-template-columns:62px 1fr;gap:12px;padding:11px 0;border-bottom:1px solid #ECE3CF}
+.pg-list time{font:14px/1.9 var(--f-ui);color:var(--gold);letter-spacing:.04em}
+.pg-item{display:block;line-height:1.6}
+.pg-who{display:block;margin-top:2px;font:13px/1.5 var(--f-ui);color:var(--muted)}
+
+/* ── 奖品 ── */
+.pz-tier{margin-bottom:38px}
+.pz-h{display:flex;align-items:baseline;justify-content:space-between;font:400 26px/1.3 var(--f-display);color:var(--navy);letter-spacing:.14em;padding-bottom:8px;border-bottom:1px solid var(--gold-line);margin-bottom:18px}
+.pz-h em{font:13px/1 var(--f-ui);font-style:normal;color:var(--gold);letter-spacing:.2em}
+.pz-items{display:grid;grid-template-columns:1fr 1fr;gap:26px 18px}
+.pz-items.n1{grid-template-columns:1fr}
+.pz-items.n1 .pz.cut .pz-pic{aspect-ratio:auto;max-width:62%;margin:0 auto}
+.pz-items.n1 .pz.cut figcaption{text-align:center}
+.pz-1 .pz-items .pz-pic{aspect-ratio:16/9}
+.pz-pic{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center}
+.pz.cut .pz-pic img{max-height:100%;width:auto;object-fit:contain}
+.pz.photo .pz-pic img{width:100%;height:100%;object-fit:cover}
+.pz figcaption{margin-top:10px;display:flex;flex-direction:column}
+.pz figcaption b{font-weight:400;font-size:16px;line-height:1.5;color:var(--ink)}
+.pz figcaption span{font:12.5px/1.5 var(--f-ui);color:var(--muted)}
+.pz figcaption em{font:13px/1.6 var(--f-ui);font-style:normal;color:var(--gold);letter-spacing:.1em}
+
+/* ── 年度回顾 ── */
+.rv-lead{margin:0 calc(var(--gut) * -1) 36px}
+.rv-hero{position:relative}
+.rv-hero img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.rv-badge{position:absolute;left:var(--gut);bottom:-18px;background:var(--deep);color:#F4EBD3;padding:12px 16px;display:flex;flex-direction:column;gap:2px;max-width:82%}
+.rv-badge span{font:13px/1.5 var(--f-ui);letter-spacing:.06em}
+.rv-badge b{font:400 22px/1.3 var(--f-display);color:var(--gold-l);letter-spacing:.12em}
+.rv-lead-t{padding:22px var(--gut) 0}
+.rv-赛场 .rv-lead-t{padding-top:36px}
+.rv-kick{font:13px/1.4 var(--f-ui);letter-spacing:.32em;color:var(--red);margin-bottom:6px}
+.rv-when{font:13px/1.6 var(--f-ui);letter-spacing:.1em;color:var(--gold)}
+.rv-lead-t h3{font:400 28px/1.35 var(--f-display);color:var(--navy);margin:6px 0 10px}
+.rv-lead-t blockquote{font:400 19px/1.6 var(--f-display);color:var(--navy);margin-bottom:10px}
+.rv-lead-t p{text-align:justify}
+.rv-items{display:flex;flex-direction:column;gap:34px}
+.rv-item figure{position:relative;margin-bottom:12px}
+.rv-item figure img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.rv-item.sq figure img{aspect-ratio:auto;max-width:440px}
+.rv-res{position:absolute;right:0;bottom:0;background:var(--red);color:#FFF4E2;font:400 15px/1 var(--f-display);letter-spacing:.12em;padding:9px 12px}
+.rv-date{display:flex;align-items:baseline;gap:8px;margin-bottom:2px}
+.rv-date b{font:400 20px/1.2 var(--f-display);color:var(--gold)}
+.rv-date span{font:12px/1 var(--f-ui);color:var(--muted);letter-spacing:.1em}
+.rv-item h3{font:400 22px/1.4 var(--f-display);color:var(--navy);margin-bottom:6px}
+.rv-item p{text-align:justify}
+/* 杂志：两条小新闻左右交错（宽屏） */
+.rv-year{margin-top:44px;padding-top:18px;border-top:1px solid var(--gold-line)}
+.rv-year-h{font:400 22px/1.3 var(--f-display);color:var(--navy);letter-spacing:.2em;margin-bottom:16px}
+.rv-year ol{position:relative;padding-left:22px}
+.rv-year ol::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;border-left:1px solid var(--gold)}
+.rv-year li{position:relative;display:grid;grid-template-columns:86px 1fr;align-items:baseline;padding:7px 0}
+.rv-year li::before{content:"";position:absolute;left:-21px;top:16px;width:9px;height:9px;border:1px solid var(--gold);background:var(--paper);transform:rotate(45deg)}
+.rv-year li.hi::before,.rv-year li.end::before{background:var(--red);border-color:var(--red)}
+.rv-year time{font:11px/1 var(--f-ui);color:var(--muted);letter-spacing:.06em}
+.rv-year time b{font:400 17px/1 var(--f-display);color:var(--gold);margin-left:6px}
+.rv-year li.end span{color:var(--red)}
+
+/* ── 历任会长 ── */
+.pr-origin{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;padding:18px 0;border-top:1px solid var(--gold-line);border-bottom:1px solid var(--gold-line);margin-bottom:34px}
+.pr-o-year{font:400 44px/1 var(--f-display);color:var(--gold)}
+.pr-o-names{display:flex;flex-wrap:wrap;gap:4px 14px;font:400 19px/1.4 var(--f-display);color:var(--navy);letter-spacing:.1em}
+.pr-origin p{font:13px/1.6 var(--f-ui);color:var(--muted);margin-top:4px}
+.pr-band{margin-bottom:34px}
+.pr-band-h{font:400 22px/1.2 var(--f-display);color:var(--gold);letter-spacing:.12em;margin-bottom:14px}
+.pr-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 12px}
+.pr-p img{width:100%;aspect-ratio:4/5;object-fit:cover;background:#E9E3D6}
+.pr-p figcaption,.pr-text li{display:flex;flex-direction:column;margin-top:8px}
+.pr-p b,.pr-text b{font:400 18px/1.3 var(--f-display);color:var(--navy);letter-spacing:.06em}
+.pr-p span,.pr-text span{font:11.5px/1.5 var(--f-ui);color:var(--muted)}
+.pr-p em,.pr-text em{font:11.5px/1.5 var(--f-ui);font-style:normal;color:var(--gold)}
+.pr-text{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 18px;margin-top:16px}
+.pr-text li{padding:8px 0;border-top:1px solid #ECE3CF}
+
+/* ── 团队 ── */
+.team h3{font:400 24px/1.3 var(--f-display);color:var(--navy);letter-spacing:.16em;margin-bottom:12px}
+.team h4{font:13px/1.4 var(--f-ui);letter-spacing:.32em;color:var(--gold);margin:22px 0 8px}
+.tg-hon{padding-bottom:28px;margin-bottom:30px;border-bottom:1px solid var(--gold-line)}
+.tg-note{font:13px/1.5 var(--f-ui);color:var(--muted);margin:-6px 0 14px;letter-spacing:.06em}
+.tg-hon ul{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px 8px}
+.tg-hon li{font:400 18px/1.4 var(--f-display);color:var(--ink);letter-spacing:.06em}
+.tg-exec{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px}
+.tg-exec div{border-top:1px solid #ECE3CF;padding-top:8px}
+.tg-exec dt{font:12px/1.5 var(--f-ui);letter-spacing:.2em;color:var(--gold)}
+.tg-exec dd{font:400 21px/1.4 var(--f-display);color:var(--navy)}
+.tg-exec .top dd{font-size:30px}
+.tg-names{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 12px}
+.tg-names li{display:flex;flex-direction:column}
+.tg-names b{font:400 18px/1.4 var(--f-display);color:var(--ink)}
+.tg-names span{font:12px/1.4 var(--f-ui);color:var(--muted)}
+.tg-clubs{margin-top:36px}
+.tg-clubs dl div{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:12px 0;border-top:1px solid #ECE3CF}
+.tg-clubs dt{font:400 17px/1.5 var(--f-display);color:var(--navy)}
+.tg-clubs dd b{display:block;font-weight:400}
+.tg-clubs dd span{display:block;font:13px/1.6 var(--f-ui);color:var(--muted)}
+
+/* ── 赞助商广告 ── */
+.ads{padding-top:56px}
+.ads-label{font:12px/1 var(--f-ui);letter-spacing:.4em;color:var(--muted);margin-bottom:6px}
+.ad{position:relative;padding:28px 0 30px;border-top:1px solid var(--gold-line)}
+.ad + .ad{margin-top:0}
+.ad-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.ad-logo{height:auto;max-width:min(100%,280px)}
+.ad-logo.center{margin:0 auto}
+.ad-logo.sm{max-width:180px}
+.ad-badge{display:flex;flex-direction:column;align-items:flex-end;font:12px/1.4 var(--f-ui);color:var(--muted)}
+.ad-badge b{font:400 16px/1.3 var(--f-display);color:var(--navy)}
+.ad-name{margin-top:14px;font:400 23px/1.4 var(--f-display);color:var(--navy);letter-spacing:.04em}
+.ad-name span{margin-left:.6em;font:14px/1 var(--f-ui);color:var(--muted)}
+.ad-subname{margin-top:4px;font:14px/1.5 var(--f-ui);letter-spacing:.14em;color:var(--gold)}
+.ad-en{margin-top:8px;font:12px/1.5 var(--f-ui);letter-spacing:.16em;text-transform:uppercase;color:var(--navy)}
+.ad-hero{margin:22px 0 6px}
+.ad-hero div{font:400 clamp(25px,7.2vw,34px)/1.45 var(--f-display);color:var(--navy);letter-spacing:.03em}
+.ad-hero span{display:block;margin-top:10px;font:13px/1.4 var(--f-ui);letter-spacing:.32em;color:var(--gold)}
+.ad-tag{margin-top:12px;color:var(--gold);font-size:15.5px;line-height:1.6}
+.ad-tag.big{font:400 22px/1.5 var(--f-display);color:var(--navy)}
+.ad-desc{margin-top:12px;text-align:justify}
+.ad-person{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:center;margin-top:18px}
+.ad-person img{width:96px;height:96px;border-radius:50%;object-fit:cover}
+.ad-person b{display:block;font:400 20px/1.4 var(--f-display);color:var(--navy)}
+.ad-person em{display:block;font:13px/1.5 var(--f-ui);font-style:normal;color:var(--gold)}
+.ad-person span{display:block;font-size:14.5px;line-height:1.6}
+.ad-cut{width:62%;margin:16px 0 0 auto}
+.ad-stats{display:flex;margin-top:18px;border-top:1px solid #ECE3CF;border-bottom:1px solid #ECE3CF}
+.ad-stats div{flex:1;padding:12px 8px}
+.ad-stats div + div{border-left:1px solid #ECE3CF}
+.ad-stats b{display:block;font:400 22px/1.2 var(--f-display);color:var(--navy)}
+.ad-stats span{font:12px/1.4 var(--f-ui);color:var(--muted)}
+.ad-tiles{margin-top:16px;counter-reset:t}
+.ad-tiles li{display:grid;grid-template-columns:30px 1fr;padding:8px 0;border-top:1px solid #ECE3CF;counter-increment:t}
+.ad-tiles li::before{content:counter(t,decimal-leading-zero);font:12px/1.9 var(--f-ui);color:var(--gold)}
+.ad-tiles li b{font-weight:400}
+.ad-tiles li span{grid-column:2;font:13px/1.5 var(--f-ui);color:var(--muted)}
+.ad-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-top:16px}
+.ad-cols b{display:block;font:13px/1.6 var(--f-ui);letter-spacing:.2em;color:var(--gold)}
+.ad-cols span{display:block;font-size:15px;line-height:1.6}
+.ad-kv{margin-top:16px}
+.ad-kv div{display:grid;grid-template-columns:5.6em 1fr;gap:12px;padding:8px 0;border-top:1px solid #ECE3CF}
+.ad-kv dt{font:13px/1.95 var(--f-ui);letter-spacing:.12em;color:var(--gold)}
+.ad-kv dd{font-size:15.5px;line-height:1.7}
+.ad-list-h{margin-top:18px;font:13px/1.4 var(--f-ui);letter-spacing:.24em;color:var(--gold)}
+.ad-list{margin-top:8px}
+.ad-list li{position:relative;padding:5px 0 5px 16px;font-size:15.5px;line-height:1.6}
+.ad-list li::before{content:"";position:absolute;left:0;top:15px;width:6px;height:6px;border:1px solid var(--gold);transform:rotate(45deg)}
+.ad-list.two{display:grid;grid-template-columns:1fr 1fr;column-gap:16px}
+.ad-chips{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:12px;font:14px/1.6 var(--f-ui);color:var(--navy);letter-spacing:.06em}
+.ad-steps{margin-top:16px}
+.ad-steps li{display:grid;grid-template-columns:34px 1fr;gap:10px;padding:8px 0;border-top:1px solid #ECE3CF}
+.ad-steps i{font:400 20px/1.3 var(--f-display);font-style:normal;color:var(--gold)}
+.ad-steps b{display:block;font-weight:400;color:var(--navy)}
+.ad-steps span{font:13.5px/1.6 var(--f-ui);color:var(--muted)}
+.ad-more{color:var(--muted);font-size:15px}
+.ad-close{margin-top:14px;font:400 19px/1.6 var(--f-display);color:var(--navy)}
+.ad-imgs{display:grid;gap:8px;margin-top:18px}
+.ad-imgs.n2{grid-template-columns:1fr 1fr}
+.ad-imgs.n3{grid-template-columns:repeat(3,1fr)}
+.ad-imgs img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.ad-imgs.n1 img{aspect-ratio:16/10}
+.ad-imgs.whole img{object-fit:contain;background:#fff;aspect-ratio:1/1}
+.ad-imgs figcaption{margin-top:6px;font:12px/1.5 var(--f-ui);color:var(--muted)}
+.ad-sign{margin-top:14px;text-align:right;font:15px/1.6 var(--f-text)}
+.ad-call{margin-top:18px;font:400 26px/1.3 var(--f-ui);letter-spacing:.02em}
+.ad-call a{text-decoration:none;color:var(--navy)}
+.ad-call i{display:block;font:12px/1.6 var(--f-ui);font-style:normal;letter-spacing:.2em;color:var(--gold)}
+.ad-call span{display:block;font:14px/1.6 var(--f-text);color:var(--muted)}
+.ad-contact{margin-top:10px;font:14px/1.7 var(--f-ui);color:var(--muted)}
+.ad-contact a{color:var(--navy)}
+.ad-links{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:16px}
+.ad-web{font:14px/1.4 var(--f-ui);letter-spacing:.06em;color:var(--navy);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:3px}
+.ad-web::after{content:" ↗";color:var(--gold)}
+.ad-offices{display:grid;gap:12px;margin-top:18px;font:14px/1.6 var(--f-ui);color:var(--muted)}
+.ad-offices b{display:block;color:var(--navy);font-weight:400}
+/* 贺词（总会） */
+.ad-wish{text-align:center;padding-top:34px}
+.wish{margin-top:18px;color:var(--navy);font-family:var(--f-display);letter-spacing:.1em}
+.wish .w-小{font-size:16px;color:var(--gold)}
+.wish .w-中{font-size:19px;line-height:1.8}
+.wish .w-大{font-size:30px;line-height:1.45}
+.wish-motto{margin-top:16px;font:13px/1 var(--f-ui);letter-spacing:.4em;color:var(--gold)}
+.wish-sign{margin-top:18px;font:15px/1.6 var(--f-text)}
+.wish-sign span{display:block;font:11px/1.6 var(--f-ui);color:var(--muted);letter-spacing:.06em}
+/* 校友名字 */
+.ad-kick{font:13px/1.4 var(--f-ui);letter-spacing:.3em;color:var(--gold)}
+.names{display:flex;flex-wrap:wrap;align-items:center;gap:18px 34px;margin:18px 0 10px}
+.names img{height:44px;width:auto}
+.ad-thanks{font:14px/1.6 var(--f-ui);color:var(--muted);letter-spacing:.1em}
+/* 分会专页 */
+.ad-big{font:400 32px/1.3 var(--f-display);color:var(--navy);letter-spacing:.08em;margin-top:6px}
+.ad-chief{display:grid;grid-template-columns:38% 1fr;gap:16px;margin-top:18px;align-items:start}
+.ad-chief img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.ad-chief b{display:block;font:400 24px/1.3 var(--f-display);color:var(--navy);margin-top:4px}
+.ad-chief em{display:block;font:13px/1.5 var(--f-ui);font-style:normal;color:var(--muted)}
+.ad-chief p{margin-top:8px;font-size:14.5px;line-height:1.7}
+.ad-sub-h{margin-top:22px;font:400 20px/1.3 var(--f-display);color:var(--navy);letter-spacing:.14em}
+/* 整页广告 / 封底 */
+.fp-hero,.bk-hero{width:calc(100% + 2 * var(--gut));max-width:none;margin:14px calc(var(--gut) * -1) 0;aspect-ratio:16/10;object-fit:cover}
+.bk-open{margin-top:12px;font:13px/1.4 var(--f-ui);letter-spacing:.24em;color:var(--red)}
+.bk-close{margin-top:12px;font:400 20px/1.6 var(--f-display);color:var(--navy)}
+.bk-sis{margin-top:20px}
+.bk-sis h3{font:13px/1.4 var(--f-ui);letter-spacing:.3em;color:var(--gold);font-weight:400}
+.bk-s-name{display:block;margin-top:12px;font:400 20px/1.4 var(--f-display);color:var(--navy)}
+.bk-s-name span{display:block;font:12px/1.4 var(--f-ui);color:var(--muted);letter-spacing:.1em}
+
+/* ── 页脚 ── */
+.foot{margin-top:60px;background:var(--deep);color:#DCE4F2;text-align:center;padding:48px var(--gut) max(48px,env(safe-area-inset-bottom));font:13px/1.8 var(--f-ui);letter-spacing:.12em}
+.foot-org{font:400 22px/1.4 var(--f-display);color:#F4EBD3;letter-spacing:.2em}
+.foot-en{font-size:11px;letter-spacing:.06em;color:#9FB0CC}
+.foot-m{margin-top:16px;color:var(--gold-l);letter-spacing:.4em}
+.foot-y{color:#9FB0CC}
+.foot-top{display:inline-block;margin-top:20px;color:var(--gold-l);text-decoration:none;border-bottom:1px solid var(--gold-l);padding-bottom:3px;letter-spacing:.3em}
+
+/* ── 宽屏（平板、电脑） ── */
+@media (min-width:760px){
+  :root{--gut:32px}
+  body{font-size:18px}
+  .sec,.ads{padding-top:96px}
+  .ch-title{font-size:60px}
+  .cover{min-height:100vh}
+  .cv-main{padding-left:8vw}
+  .cv-emblem{width:84px}
+  .letter{margin:0 0 48px;padding:44px 52px 40px}
+  .rv-lead{margin-left:-80px;margin-right:-80px}
+  .rv-hero img{aspect-ratio:16/9}
+  .rv-lead-t{padding-left:80px;padding-right:80px}
+  .rv-items{display:grid;grid-template-columns:1fr 1fr;gap:40px 28px}
+  .rv-专题 .rv-items{grid-template-columns:1fr}
+  .rv-专题 .rv-item{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+  .rv-专题 .rv-item:nth-child(even) figure{order:2}
+  .pr-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .tg-hon ul{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .pz-items{grid-template-columns:repeat(3,1fr)}
+  .pz-items.n1{grid-template-columns:1fr}
+  .ad-offices{grid-template-columns:repeat(3,1fr)}
+  .fp-hero,.bk-hero{width:100%;margin-left:0;margin-right:0}
+}
+@media (min-width:1100px){
+  .rv-lead{margin-left:-160px;margin-right:-160px}
+  .rv-lead-t{padding-left:160px;padding-right:160px}
+}
+
+/* ══════════ 活动详情页（二级页面） ══════════ */
+.ev-bar{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:max(10px,env(safe-area-inset-top)) var(--gut) 10px;background:rgba(250,247,240,.96);border-bottom:1px solid var(--gold-line);font:13px/1.4 var(--f-ui);letter-spacing:.1em;color:var(--muted)}
+.ev-bar a{color:var(--navy);text-decoration:none;letter-spacing:.14em}
+.ev-kick{font:13px/1.5 var(--f-ui);letter-spacing:.16em;color:var(--gold)}
+.ev-title{margin-top:10px;font:400 30px/1.4 var(--f-display);color:var(--navy);letter-spacing:.03em}
+.ev-host{margin-top:10px;font:12.5px/1.6 var(--f-ui);color:var(--muted)}
+.ev-lead{margin:22px 0 4px;font-size:18.5px;line-height:1.9;color:var(--ink);text-align:justify}
+.ev-p{text-indent:2em;margin:0 0 .9em;text-align:justify}
+.ev-p b{font-weight:600;color:var(--navy)}
+.ev-src{margin-top:34px;padding-top:12px;border-top:1px solid var(--gold-line);font:12px/1.6 var(--f-ui);color:var(--muted);letter-spacing:.08em}
+.ev-pic{display:block;cursor:zoom-in}
+.ev-pic img{width:100%;height:auto}
+.ev-figs{margin:26px 0 30px;display:grid;gap:6px}
+.ev-figs figcaption{margin-top:4px;font:12.5px/1.6 var(--f-ui);color:var(--muted);letter-spacing:.06em}
+.ev-figs.n3{grid-template-columns:1fr 1fr}.ev-figs.n3 .ev-pic:first-child{grid-column:1/-1}
+.ev-figs.n3 .ev-pic:not(:first-child) img{aspect-ratio:1/1;object-fit:cover}
+.ev-figs .ev-pic.tall img{max-height:80vh;width:auto;max-width:100%;margin:0 auto}
+.ev-foot{margin-top:40px;background:var(--deep);color:#DCE4F2;text-align:center;padding:36px var(--gut) max(36px,env(safe-area-inset-bottom));font:13px/1.8 var(--f-ui);letter-spacing:.12em}
+.ev-foot a{color:var(--gold-l);text-decoration:none;border-bottom:1px solid var(--gold-l);padding-bottom:3px;letter-spacing:.24em}
+.ev-foot-org{margin-top:18px;font:400 18px/1.4 var(--f-display);color:#F4EBD3;letter-spacing:.2em}
+/* A 图文长卷 */
+.evA-hero img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.evA-hero-cap{padding:8px var(--gut) 0;font:12.5px/1.6 var(--f-ui);color:var(--muted);letter-spacing:.06em}
+.evA{padding-top:28px}
+.evA .ev-figs.bleed{margin-left:calc(var(--gut) * -1);margin-right:calc(var(--gut) * -1)}
+.evA .ev-figs.bleed figcaption{padding:0 var(--gut)}
+/* B 相册 */
+.evB-head{padding-top:36px;padding-bottom:10px}
+.evB-more{margin-top:14px}
+.evB-more summary{display:inline-block;cursor:pointer;list-style:none;font:13px/1 var(--f-ui);letter-spacing:.3em;color:var(--gold);border-bottom:1px solid var(--gold-line);padding-bottom:5px;margin-bottom:16px}
+.evB-more summary::-webkit-details-marker{display:none}
+.evB-more[open] summary{display:none}
+.evB-gal{max-width:980px;margin:0 auto;padding:10px 6px 20px}
+.evB-count{padding:0 calc(var(--gut) - 6px) 12px;font:12.5px/1.5 var(--f-ui);color:var(--muted);letter-spacing:.1em}
+.evB-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.evB-grid .ev-pic img{aspect-ratio:1/1;object-fit:cover}
+.evB-grid .ev-pic.g0{grid-column:1/-1}
+.evB-grid .ev-pic.g0 img{aspect-ratio:3/2}
+.evB-grid .ev-pic.tall img{max-height:none;width:100%}
+/* C 这一天 */
+.evC-hero{position:relative;color:#fff}
+.evC-hero img{width:100%;height:78vh;height:78svh;object-fit:cover}
+.evC-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,22,60,0) 40%,rgba(2,18,48,.82) 100%)}
+.evC-hero-t{position:absolute;z-index:1;left:var(--gut);right:var(--gut);bottom:26px}
+.evC-hero .ev-kick{color:var(--gold-l)}
+.evC-hero .ev-title{color:#FFF6E2;font-size:28px}
+.evC{padding-top:36px}
+.evC-ch{position:relative;padding-left:22px;border-left:1px solid var(--gold);margin-left:4px;padding-bottom:16px}
+.evC-label{position:relative;margin:0 0 14px;font:400 21px/1.3 var(--f-display);color:var(--navy);letter-spacing:.12em}
+.evC-label i{position:absolute;left:-28px;top:8px;width:11px;height:11px;background:var(--paper);border:1px solid var(--gold);transform:rotate(45deg)}
+.evC-ch:first-child .evC-label i,.evC-ch:last-child .evC-label i{background:var(--red);border-color:var(--red)}
+.evC .ev-figs{margin-right:calc(var(--gut) * -1)}
+/* 照片查看层 */
+.viewer.gal{background:#05090F}
+.gal-stage{position:relative;flex:1;display:flex;align-items:center;justify-content:center;min-height:0;padding:8px}
+.gal-stage img{max-width:100%;max-height:100%;object-fit:contain}
+.gal-nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:64px;border:0;background:rgba(10,20,36,.45);color:#F2E3B8;font:300 34px/1 var(--f-ui);cursor:pointer}
+.gal-nav.prev{left:0}.gal-nav.next{right:0}
+.gal-cap{padding:10px 16px max(18px,env(safe-area-inset-bottom));min-height:46px;color:#CFC6AE;font:13px/1.6 var(--f-ui);letter-spacing:.06em;text-align:center}
+/* 年刊主页里的「阅读全文」 */
+.rv-more{display:inline-block;margin-top:12px;font:13px/1 var(--f-ui);letter-spacing:.24em;color:var(--navy);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:5px}
+.rv-more::after{content:" →";color:var(--gold)}
+@media (min-width:760px){
+  .ev-title{font-size:40px}
+  .evA-hero img{aspect-ratio:21/9}
+  .evB-grid{grid-template-columns:repeat(3,1fr)}
+  .evB-grid .ev-pic.g0{grid-column:span 2}
+  .evC-hero .ev-title{font-size:44px}
+}
+
+/* 横滑组图（方向 C） */
+.ev-swipe{margin:24px calc(var(--gut) * -1) 30px 0}
+.sw-track{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-right:var(--gut)}
+.sw-track::-webkit-scrollbar{display:none}
+.sw-slide{flex:0 0 86%;scroll-snap-align:start}
+.sw-slide .ev-pic img{width:100%;aspect-ratio:4/3;object-fit:cover;max-height:none}
+.sw-meta{display:flex;align-items:center;gap:12px;margin-top:8px;padding-right:var(--gut);font:12.5px/1.4 var(--f-ui);color:var(--muted);letter-spacing:.08em}
+.sw-n{color:var(--gold);letter-spacing:.12em;min-width:3.2em}
+.sw-hint{flex:1}
+.ev-swipe.moved .sw-hint{visibility:hidden}
+.sw-btns{display:none;gap:6px}
+.sw-b{width:30px;height:30px;border:1px solid var(--gold-line);background:none;color:var(--navy);font:18px/1 var(--f-ui);cursor:pointer}
+.ev-swipe figcaption{margin-top:4px;padding-right:var(--gut);font:12.5px/1.6 var(--f-ui);color:var(--muted);letter-spacing:.06em}
+@media (hover:hover) and (pointer:fine){.sw-btns{display:flex}.sw-hint{visibility:hidden}}
+@media (min-width:760px){.sw-slide{flex-basis:72%}}
+
+.ev-quote{text-indent:0;margin:6px 0 18px;padding:2px 0 2px 16px;border-left:2px solid var(--gold);font:400 18px/1.7 var(--f-display);color:var(--navy)}
+.ev-table{margin:14px 0 22px;overflow-x:auto}
+.ev-table table{border-collapse:collapse;width:100%;font:13.5px/1.6 var(--f-ui)}
+.ev-table th,.ev-table td{padding:8px 8px;border-bottom:1px solid #ECE3CF;text-align:left;vertical-align:top}
+.ev-table tr:first-child th,.ev-table tr:first-child td{color:var(--gold);letter-spacing:.1em;border-bottom-color:var(--gold-line)}
+.ev-table b{color:var(--red);font-weight:600}
+.evC-hero.nohero{color:var(--ink);padding:40px var(--gut) 8px;max-width:var(--col);margin:0 auto}
+.evC-hero.nohero::after{display:none}
+.evC-hero.nohero .evC-hero-t{position:static}
+.evC-hero.nohero .ev-kick{color:var(--gold)}
+.evC-hero.nohero .ev-title{color:var(--navy)}
+.evC-ch.extra .evC-label{color:var(--gold)}
+
+.ev-pn{max-width:var(--col);margin:10px auto 0;padding:0 var(--gut);display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ev-pn a{display:flex;flex-direction:column;gap:2px;padding:14px 0;border-top:1px solid var(--gold-line);text-decoration:none;color:var(--navy);font:400 16px/1.45 var(--f-display)}
+.ev-pn a.next{text-align:right;grid-column:2}
+.ev-pn i{font:12px/1.4 var(--f-ui);font-style:normal;letter-spacing:.16em;color:var(--gold)}
+.ev-pn span{font:11.5px/1.4 var(--f-ui);color:var(--muted);letter-spacing:.06em}
+.rv-year li a{color:var(--navy);text-decoration:none;border-bottom:1px solid var(--gold-line)}
+.rv-year li a::after{content:" →";color:var(--gold);font-size:.85em}
+
+.evC-hero.wide img{height:auto;aspect-ratio:auto}
+.evC-hero.wide::after{display:none}
+.evC-hero.wide .evC-hero-t{position:static;padding:22px var(--gut) 0;max-width:var(--col);margin:0 auto}
+.evC-hero.wide .ev-kick{color:var(--gold)}
+.evC-hero.wide .ev-title{color:var(--navy)}
+@media (min-width:760px){.evC-hero.wide img{max-height:78vh;object-fit:cover}}
+
+.ev-table th{white-space:nowrap;color:var(--navy);font-weight:400}
+.ev-p:has(> b:only-child){text-align:left}
+
+/* 赞助商汇总（公众号尾图） */
+.thanks .ch{margin-bottom:24px}
+.thanks-wall{margin:0 calc(var(--gut) * -0.5);background:#fff;border:1px solid #EFE6D2;padding:18px 10px}
+.thanks-wall img{width:100%;height:auto;max-width:540px;margin:0 auto}
+
+/* 11-01 历任会长按纸质版：任职起始年 + 名字 + 学校届别 + 理事长年份 */
+.pr-y{display:block;font:400 15px/1.2 var(--f-display);font-style:normal;color:var(--gold);letter-spacing:.06em;margin-bottom:2px}
+.ad-reg-note{margin-top:14px;font:13px/1.6 var(--f-ui);color:var(--muted)}
+
+</style>
+</head>
+<body>
+
+<button class="toc-btn" id="tocBtn" aria-controls="toc" aria-expanded="false">目录</button>
+<nav class="toc" id="toc" hidden>
+  <div class="toc-in">
+    <div class="toc-h"><span>交通大学南加州校友会</span><span>八十三周年年会 · 电子年刊</span></div>
+    <ol>
+<li><a href="#s01"><i>01</i>贺信</a></li><li><a href="#s02"><i>02</i>致辞</a></li><li><a href="#s04"><i>03</i>节目单</a></li><li><a href="#s06"><i>04</i>奖品</a></li><li><a href="#s08"><i>05</i>一年同行</a></li><li><a href="#s09"><i>06</i>五校一家</a></li><li><a href="#s10"><i>07</i>活力交大</a></li><li><a href="#s12"><i>08</i>薪火相传</a></li><li><a href="#s14"><i>09</i>同心同行</a></li><li><a href="#s15"><i>10</i>校友来稿</a></li><li><a href="#s18"><i>11</i>鸣谢</a></li>    </ol>
+    <button class="toc-close" id="tocClose">关闭</button>
+  </div>
+</nav>
+
+<div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-label="查看原件">
+  <div class="vw-bar"><span class="vw-title" id="vwTitle"></span><a class="vw-dl" id="vwDl" href="#" download>保存原件</a><a class="vw-dl" id="vwPdf" href="#" download hidden>PDF</a><button class="vw-close" id="vwClose">关闭</button></div>
+  <div class="vw-scroll" id="vwScroll"><img id="vwImg" alt=""></div>
+</div>
+
+<main>
+
+<section class="cover" id="s00" data-entry="01_封面" data-label="封面">
+  <div class="cv-bg" style="background-image:url('assets/img/73d7538c40ba.webp')"></div>
+  <div class="cv-top">
+    <img class="cv-emblem" src="assets/img/22c4e06489ca.webp" alt="交通大学南加州校友会会徽" decoding="async">
+    <img class="cv-schools" src="assets/img/20f0e8dbac15.webp" alt="五所交通大学校徽" decoding="async">
+  </div>
+  <div class="cv-main">
+    <div class="cv-year">2026</div>
+    <h1 class="cv-title">八十三周年年会</h1>
+    <div class="cv-org">交通大学南加州校友会</div>
+    <div class="cv-130"><svg viewBox="0 0 320 175" role="img" aria-label="交通大学建校 130 周年"><defs><linearGradient id="cvg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="170"><stop offset="0" stop-color="#FFF4C8"/><stop offset=".35" stop-color="#F2D47C"/><stop offset=".72" stop-color="#C8982C"/><stop offset="1" stop-color="#F6E0A0"/></linearGradient><mask id="cvm"><rect x="0" y="0" width="320" height="175" fill="#fff"/><rect x="190" y="101" width="120" height="3" fill="#000"/><rect x="190" y="110" width="120" height="4" fill="#000"/><rect x="190" y="120" width="120" height="5" fill="#000"/><rect x="190" y="131" width="120" height="6" fill="#000"/><path fill="#000" d="M267.2,146 Q266.5,115.0 263.7,84 L266.2,84 Q270.4,115.0 272.8,146 Z"/><path fill="#000" d="M265.0,84.0 Q252.9,75.7 240.1,85.1 Q252.1,80.1 265.0,84.0 Z"/><path fill="#000" d="M265.0,84.0 Q255.2,68.4 242.9,72.6 Q252.6,73.3 265.0,84.0 Z"/><path fill="#000" d="M265.0,84.0 Q263.5,68.6 258.2,68.5 Q259.7,72.4 265.0,84.0 Z"/><path fill="#000" d="M265.0,84.0 Q270.3,68.6 271.8,68.5 Q266.5,72.4 265.0,84.0 Z"/><path fill="#000" d="M265.0,84.0 Q277.4,68.4 287.1,72.6 Q274.8,73.3 265.0,84.0 Z"/><path fill="#000" d="M265.0,84.0 Q277.9,75.7 289.9,85.1 Q277.1,80.1 265.0,84.0 Z"/><path fill="#000" d="M265.0,84.0 Q272.7,82.5 281.4,92.6 Q273.7,85.3 265.0,84.0 Z"/><path fill="#000" d="M265.0,84.0 Q257.3,78.1 248.6,83.9 Q256.3,81.0 265.0,84.0 Z"/></mask></defs><g fill="url(#cvg)"><text x="58" y="142" text-anchor="middle" font-family="Display" font-size="138">1</text><text x="150" y="142" text-anchor="middle" font-family="Display" font-size="138">3</text><circle cx="250" cy="92" r="50" mask="url(#cvm)"/></g><line x1="20" y1="151" x2="300" y2="151" stroke="url(#cvg)" stroke-width="1.2"/></svg>
+      <div class="cv-years"><span>1896</span><i></i><span>2026</span></div>
+    </div>
+    <div class="cv-couplet"><div>百卅交大薪火传</div><div>南加五交谊新篇</div></div>
+  </div>
+  <div class="cv-foot">
+    <div>2026年11月8日 · 星期日</div>
+    <div>圣盖博喜来登酒店 Sheraton San Gabriel</div>
+    <a class="cv-down" href="#s01">向下阅读</a>
+  </div>
+</section>
+
+
+<section class="sec letters" id="s01" data-entry="贺信" data-label="贺信">
+  <header class="ch">
+  <h2 class="ch-title">贺信</h2>
+<div class="ch-sub"><span>母校与兄弟校友会 · 2026 年 10 月</span></div></header>
+
+  <article class="letter" id="s01-1">
+<figure class="lt-head"><img class="" src="assets/img/9ba90fb3710a.webp" alt="西安交通大学 信头" loading="lazy" decoding="async"></figure>    <h3 class="lt-from">西安交通大学</h3>
+    <div class="lt-body">
+<p class="lt-greet">交通大学南加州校友会：</p><p>欣闻交通大学南加州校友会 83 周年年会将于 2026 年 11 月 8 日在美国洛杉矶圣盖博市举行，在此谨代表西安交通大学向大会表示热烈祝贺，向旅居南加州的全体交大校友及家人致以亲切问候和诚挚祝福。</p><p>八十三载春华秋实，南加州校友会始终秉持“五校一家，同行致远”的宗旨，紧密团结广大在美校友，积极搭建交流平台，促进共同发展，为弘扬母校声誉、促进中美文化交流与科技合作作出了卓有成效的贡献。</p><p>从 1943 年钱学森、胡声求、熊大纪等前贤创立校友会至今，八十三年来，校友会聚集了同根同源的五所交通大学校友，为母校发展献计献策，为中华民族的伟大复兴竭尽全力，其功绩必垂于青史，其精神必铭于人心。</p><p>2026 年，我们共同迎来交通大学建校 130 周年，诚挚欢迎广大校友常回母校，共叙情谊，共谋发展，共谱新篇！</p><p>笺短意长，谨颂嘉祉。预祝本次年会庆典圆满成功！愿交通大学南加州校友会基业长青、蒸蒸日上；祝各位校友阖家安康、鸿业腾骧！</p>    </div>
+    <div class="lt-sign">
+      <div class="lt-sign-t"><div>西安交通大学</div><div>2026 年 10 月 29 日</div></div>
+<img class="lt-seal" src="assets/img/26534c3d23ce.webp" alt="落款与印章" loading="lazy" decoding="async">    </div>
+    <div class="lt-origs">
+      <a class="lt-orig" href="assets/img/7cb5190ea3af.jpg" data-view="assets/img/7cb5190ea3af.jpg" data-title="西安交通大学 贺信原件" data-pdf="assets/files/xjtu-congratulations-2026.pdf" target="_blank" rel="noopener">
+        <img class="lt-thumb" src="assets/img/bdad572ab2ad.webp" alt="西安交通大学 贺信原件" loading="lazy" decoding="async"><span>查看原件</span>
+      </a>
+<a class="lt-pdf" href="assets/files/xjtu-congratulations-2026.pdf" download>下载 PDF 原件</a>    </div>
+  </article>
+  <article class="letter trad" id="s01-2">
+<figure class="lt-head"><img class="" src="assets/img/2922af2d53c2.webp" alt="國立陽明交通大學 信头" loading="lazy" decoding="async"></figure>    <h3 class="lt-from">國立陽明交通大學<span>校長 林奇宏</span></h3>
+    <div class="lt-body">
+<p>欣逢交通大學南加州校友會成立 83 週年，謹代表陽明交大向長年深耕海外、心繫母校的南加州校友們，致上最誠摯的祝賀與問候！</p><p>2026 年是交通大學創校 130 週年的重要里程碑。從 1896 年創校至今，每一所交大都有各自獨特的歷史，新竹交大在台初期的篳路藍縷，以及 2021 年 2 月與陽明大學合校成為陽明交通大學的重要里程。一路始終秉持「飲水思源」精神，在不同世代的努力下，持續開拓創新、追求卓越。</p><p>而南加州校友會自 1943 年創立以來，走過 83 個年頭，見證每一代交大人在海外落地生根，在各自的專業領域深耕發光，也以深厚的情誼成為連結母校與國際社會的重要橋梁。這份跨越世代與地域的情誼，也正是「飲水思源」最珍貴的實踐。</p><p>2021 年陽明大學與交通大學合校，開啟嶄新的發展篇章，積極推動跨域創新與國際合作。展望 2028 年，一所為未來而生的醫院，也即將在交通大學當年於臺灣的起點——博愛校區誕生。這片曾經孕育無數科技人才、見證交大在臺灣扎根茁壯的土地，如今將被賦予新的使命，從培育科技人才的搖籃，邁向結合尖端科技與人文關懷的未來醫療場域。</p><p>土地承載著歷史與記憶，也孕育著創新與希望，期待全球校友持續與我們同行，共同見證這片土地開創下一個嶄新的篇章。</p><p>最後，誠摯感謝南加州校友會歷任會長、理事長及所有校友長年來的付出與奉獻。祝福 83 週年年會圓滿成功，所有校友身體健康、事業順遂、闔家平安。也期待全球交大人持續攜手，讓「飲水思源」的精神代代相傳。</p>    </div>
+    <div class="lt-sign">
+      <div class="lt-sign-t"><div>國立陽明交通大學校長　林奇宏　敬賀</div><div>2026 年 10 月</div></div>
+<img class="lt-seal" src="assets/img/7a22b8e60ae2.webp" alt="落款与印章" loading="lazy" decoding="async">    </div>
+    <div class="lt-origs">
+      <a class="lt-orig" href="assets/img/ca5f609cb625.jpg" data-view="assets/img/ca5f609cb625.jpg" data-title="國立陽明交通大學 贺信原件" target="_blank" rel="noopener">
+        <img class="lt-thumb" src="assets/img/f064bcc88254.webp" alt="國立陽明交通大學 贺信原件" loading="lazy" decoding="async"><span>查看原件</span>
+      </a>
+    </div>
+  </article>
+  <article class="letter" id="s01-3">
+<figure class="lt-head"><img class="" src="assets/img/73a68aecc8d2.webp" alt="北京交通大学校友会 信头" loading="lazy" decoding="async"></figure>    <h3 class="lt-from">北京交通大学校友会</h3>
+    <div class="lt-body">
+<p class="lt-greet">交通大学南加州校友会万荣根理事长、何桂萍会长并全体与会校友：</p><p>欣闻交通大学南加州校友会将于 2026 年 11 月 8 日举行第八十三周年年会，北京交通大学校友会谨代表全体北京交大校友，向大会的召开致以热烈祝贺，向南加州校友会全体理事及广大校友致以诚挚问候！</p><p>百卅薪火相传，思源情谊绵长。一直以来，南加州校友会以“饮水思源”为根，以在美校友为脉，传承交大精神，续写同窗情谊。你们是海外校友回望母校时的那座桥，也是交大精神在异乡生根发芽的那扇窗。多年来，校友会在联络服务校友、促进校友交流、推动中美人文交流与科技合作等方面默默耕耘、久久为功，硕果盈枝，令人由衷钦佩。</p><p>回望 2026 年，南加州校友会持续开展形式多样、内容丰富的校友活动，为广大校友搭建交流情谊、分享经验、共谋发展的平台，也让跨越山海的交大情谊在一次次相聚中愈加深厚。此次以“交大全球校友，同庆母校130生日”为主题的年会，恰逢母校百卅华诞，意义尤为特殊。我们相信，这场盛会必将进一步凝聚南加州校友的情感与力量，汇聚校友智慧，促进校友事业发展，为母校建设注入新的动力，也为中美民间友好交流增添温暖而持久的力量。</p><p>百卅交大，因你我而精彩；山海相隔，因思源而相连。母校 130 周年华诞，是全体交大人共同期盼的盛事，也是海内外校友共享的荣光。我们欣喜地看到，南加州校友会始终心系母校，以实际行动表达对母校的深厚情谊，并积极筹备、热情参与百卅校庆系列活动。这份跨越山海的赤子之心，令人感动。北京交通大学校友会愿与南加州校友会及全球各地校友组织继续携手同行、守望相助，共叙思源情谊，共聚奋进力量，共同为母校 130 周年华诞增光添彩，携手书写交通大学更加灿烂的未来！</p><p>最后，衷心预祝交通大学南加州校友会第八十三周年年会圆满成功！祝愿南加州校友会蒸蒸日上、校友情谊历久弥新！祝各位校友身体健康、事业顺遂、阖家幸福！</p>    </div>
+    <div class="lt-sign">
+      <div class="lt-sign-t"><div>北京交通大学校友会</div><div>2026 年 10 月</div></div>
+<img class="lt-seal" src="assets/img/1d3e5405d3c6.webp" alt="落款与印章" loading="lazy" decoding="async">    </div>
+    <div class="lt-origs">
+      <a class="lt-orig" href="assets/img/6e267ab9b95b.jpg" data-view="assets/img/6e267ab9b95b.jpg" data-title="北京交通大学校友会 贺信原件" target="_blank" rel="noopener">
+        <img class="lt-thumb" src="assets/img/7f8770cd4c4c.webp" alt="北京交通大学校友会 贺信原件" loading="lazy" decoding="async"><span>查看原件</span>
+      </a>
+    </div>
+  </article>
+</section>
+
+
+<section class="sec speech" id="s02" data-entry="02_致辞" data-label="致辞">
+  <header class="ch">
+  <h2 class="ch-title">致辞</h2>
+<div class="ch-sub"><span>百卅交大薪火传　南加五交谊新篇</span></div></header>
+
+  <article class="sp sp-1">
+    <figure class="sp-who">
+      <img class="sp-photo" src="assets/img/23d2b836efd0.webp" alt="何桂萍" loading="lazy" decoding="async">
+      <figcaption><span class="sp-role">会长</span><b class="sp-name">何桂萍</b><span class="sp-bio">西安交通大学 无线电系 1987 届</span></figcaption>
+    </figure>
+    <div class="sp-text"><p>今天，我们怀着无比喜悦和感恩的心情，齐聚一堂，共同庆祝交通大学南加州校友会八十三周年年会。这不仅是一次聚会，更是属于交大人的节日，一场属于感恩、友情与传承的盛典。</p><p>今年，我们以“百卅交大薪火传，南加五交谊新篇”为主题，恰逢交通大学建校 130 周年。一百三十年来，交大从南洋公学一路走来，薪火相传，桃李满天下。“饮水思源”是每一位交大人最熟悉的四个字：我们不忘母校的培养、师长的教诲和前辈的付出，也愿把这份感恩，化作回馈社会的行动。</p><p>校友会自 1943 年创立，也已走过 83 个春秋，始终是海外校友最温暖的精神港湾。在此，我要特别向前辈校友们致敬，向历届会长、理事和每一位默默付出的义工致谢。正是你们的坚守，让交大精神在南加生根、延续。</p><p>第一，感恩母校，加强与五所交大的联系，让母校的精神在南加代代相传。</p><p>第二，凝聚校友，让每一位校友都感受到归属与温暖，让校友会成为彼此守望的大家庭。</p><p>第三，互助共进，联结校友企业与专业人士，在事业与生活中彼此扶持、共同成长。</p><p>第四，回馈社会，持续推动公益与文化活动，展现交大校友的胸怀与担当，让社会看见交大的力量。</p><p>最后，愿我们怀着感恩之心，带着交大精神，在南加这片土地上继续携手前行、回馈社会！祝年会圆满成功！</p></div>
+  </article>
+  <article class="sp sp-2">
+    <figure class="sp-who">
+      <img class="sp-photo" src="assets/img/9414ba84fe43.webp" alt="万荣根" loading="lazy" decoding="async">
+      <figcaption><span class="sp-role">理事长</span><b class="sp-name">万荣根</b><span class="sp-bio">西安交通大学 电气绝缘 1984 届</span></figcaption>
+    </figure>
+    <div class="sp-text"><p>我是交大南加州校友会理事长万荣根。在这个美好的夜晚，我谨代表校友会全体理事，向莅临本次年会的每一位朋友，表示最热烈的欢迎和最诚挚的感谢！</p><p>今年是母校建校一百三十周年，每一位交大人都倍感自豪。南加州校友会也走过了八十三年的风风雨雨，每一步的发展，每一点的成绩，都离不开每一位校友的奉献，更离不开兄弟院校和侨团朋友们一直以来的鼎力支持。是你们，让我们这个大家庭更加温暖，更有力量。今年，新一届团队将接过薪火，继续为大家服务。</p><p>今晚，让我们重温同窗之谊，共叙合作之情，畅想未来之路。</p><p>最后，再次感谢各位的光临！预祝大家度过一个愉快而难忘的夜晚，也祝愿我们的友谊地久天长！</p></div>
+  </article>
+  <div class="sky">
+<div class="sky-t">饮水思源</div>    <div class="sky-art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 518.4 91.13290517567057" width="518.4pt" height="91.13290517567057pt"><rect width="518.4" height="91.13290517567057" fill="white"/><g transform="translate(12.0702,43.9442) scale(0.441887)" stroke-linecap="round" stroke-linejoin="round"><path d="M-16,38 Q-4,45 8,45 H172 Q184,45 196,38" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M-6,43 Q2,48 12,48 H168 Q178,48 186,43" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M-16,38 Q8,35 24,24 H156 Q172,35 196,38" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M24,24 L36,10 M156,24 L144,10" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M34,10 H146 M34,7 H146 M34,7 V10 M146,7 V10" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M36,7 V0 Q36,-3 39,-3 L40,-1 Q38.5,0 40,2 L42,3 V7" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M144,7 V0 Q144,-3 141,-3 L140,-1 Q141.5,0 140,2 L138,3 V7" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M30,26 V43" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M38,26 V43" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M46,26 V43" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M54,26 V43" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M62,26 V43" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M70,26 V43" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M78,26 V43" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M86,26 V43" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M94,26 V43" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M102,26 V43" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M110,26 V43" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M118,26 V43" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M126,26 V43" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M134,26 V43" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M142,26 V43" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M150,26 V43" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M-2,50 H182 M-2,58 H182" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M78,51.3 H102 V56.7 H78 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M8.5,54 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M26.5,54 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M44.5,54 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M132.5,54 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M150.5,54 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M168.5,54 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M0,100 V58 M52,100 V58 M0,62 H52 M0,87 H52" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M128,100 V58 M180,100 V58 M128,62 H180 M128,87 H180" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M146,66 H152 V84 H146 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M58,100 V58 M122,100 V58" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M79,100 V65 H101 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M79,69 Q83,69 83,65" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M101,69 Q97,69 97,65" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M85,65 V66.6" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M83,68.4 a2,1.7 0 1,0 4,0 a2,1.7 0 1,0 -4,0" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M90,65 V66.6" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M88,68.4 a2,1.7 0 1,0 4,0 a2,1.7 0 1,0 -4,0" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M95,65 V66.6" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M93,68.4 a2,1.7 0 1,0 4,0 a2,1.7 0 1,0 -4,0" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M61,100 V73 Q61,67 66.0,67 Q68.5,64.5 71.0,67 Q76,67 76,73 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M63.5,100 V79 H73.5 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M104,100 V73 Q104,67 109.0,67 Q111.5,64.5 114.0,67 Q119,67 119,73 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M106.5,100 V79 H116.5 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/></g><g transform="translate(116.4406,21.8967) scale(0.662362)" stroke-linecap="round" stroke-linejoin="round"><path d="M14,100 V83 H22 M110,83 H118 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M40,100 V87 H92 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M52,83.6 H80 V85.6 H52 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M46.5,87 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M53,87 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M59.5,87 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M66,87 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M72.5,87 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M79,87 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M85.5,87 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M22,83 V68 H53.5 M78.5,68 H110 V83" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M32,68 V48 H53.5 M78.5,48 H100 V68" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M42,48 V30.6 H53.5 M78.5,30.6 H90 V48" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M22,70.5 h-2 v7.5 h2" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M110,70.5 h2 v7.5 h-2" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M32,50.5 h-2 v7.5 h2" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M100,50.5 h2 v7.5 h-2" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M42,33.5 h-2 v7.5 h2" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M90,33.5 h2 v7.5 h-2" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M25.5,73 H50.5 M81.5,73 H106.5" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M25.5,78 H50.5 M81.5,78 H106.5" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M35.5,54 H50.5 M81.5,54 H96.5" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M35.5,59.5 H50.5 M81.5,59.5 H96.5" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M45.5,36.5 H50.5 M81.5,36.5 H86.5" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M45.5,42 H50.5 M81.5,42 H86.5" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M53.5,83 V33 H64.8 V83 M67.2,83 V33 H78.5 V83" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M53.5,41 H64.8 M67.2,41 H78.5" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M53.5,49 H64.8 M67.2,49 H78.5" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M53.5,57 H64.8 M67.2,57 H78.5" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M53.5,65 H64.8 M67.2,65 H78.5" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M53.5,73 H64.8 M67.2,73 H78.5" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M42,30.6 H90" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M47,30.6 L52,19 H80 L85,30.6" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M55.2,22.5 h1.6 v2.6 h-1.6 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M58.2,22.5 h1.6 v2.6 h-1.6 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M61.2,22.5 h1.6 v2.6 h-1.6 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M69.2,22.5 h1.6 v2.6 h-1.6 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M72.2,22.5 h1.6 v2.6 h-1.6 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M75.2,22.5 h1.6 v2.6 h-1.6 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M61.4,19 V15.8 H70.6 V19" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M62.4,15.8 V8.6 H69.6 V15.8" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M63.7,12.2 a2.3,2.3 0 1,0 4.6,0 a2.3,2.3 0 1,0 -4.6,0" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M66,12.2 V10.6 M66,12.2 h1.2" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M5.00,100 Q8.40,96 8.60,86 L12.10,2.6 L17.90,1.6 L21.40,86 Q21.60,96 25.00,100 Z M12.10,2.6 C11.40,-4 13.00,-9 15.00,-12 C17.00,-9 18.60,-4 17.90,1.6 Z" fill="white" stroke="none"/><path d="M5.00,100 Q8.40,96 8.60,86 L12.10,2.6 L17.90,1.6 L21.40,86 Q21.60,96 25.00,100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M12.10,2.6 C11.40,-4 13.00,-9 15.00,-12 C17.00,-9 18.60,-4 17.90,1.6" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M13.50,2.4 C13.40,-2.5 14.20,-4.8 15.00,-5.6 C15.80,-4.8 16.60,-2.5 16.50,2.0" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M15.00,-12 C13.80,-14 14.00,-16.5 15.00,-18.5 C16.00,-16.5 16.20,-14 15.00,-12" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M15.00,-18.5 V-24" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M12.60,56 a2.4,2.4 0 1,0 4.8,0 a2.4,2.4 0 1,0 -4.8,0" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M13.30,60 H16.70 V65 H13.30 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M0.00,100 V97.6 H30.00 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/></g><g transform="translate(212.3600,41.2929) scale(0.468400)" stroke-linecap="round" stroke-linejoin="round"><path d="M0,100 V51 H31" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M4,100 V55 M0,55 H31" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M8,100 V80 A9,9 0 0,1 26,80 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M6,100 V80 A11,11 0 0,1 28,80 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M3,51 C12,50 21,45 26,37 S30,30 31,29.5" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M3,51 c-2.5,-0.5 -3,-4.5 0,-5 c2.5,-0.3 3,2.5 1,3" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M200,100 V51 H169" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M196,100 V55 M200,55 H169" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M192,100 V80 A9,9 0 0,0 174,80 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M194,100 V80 A11,11 0 0,0 172,80 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M197,51 C188,50 179,45 174,37 S170,30 169,29.5" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M197,51 c2.5,-0.5 3,-4.5 0,-5 c-2.5,-0.3 -3,2.5 -1,3" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M31,100 V9.7" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M169,100 V9.7" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M63,100 V66 A37,37 0 0,1 137,66 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M58,100 V66 A42,42 0 0,1 142,66 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M96.5,24.5 H103.5 L102.5,33.5 H97.5 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M37.5,92 V31 M44.5,92 V31" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M36.5,92 H45.5 V100 M36.5,100 V92" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M36.5,31 H45.5 V28 H36.5 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M48.5,92 V31 M55.5,92 V31" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M47.5,92 H56.5 V100 M47.5,100 V92" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M47.5,31 H56.5 V28 H47.5 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M144.5,92 V31 M151.5,92 V31" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M143.5,92 H152.5 V100 M143.5,100 V92" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M143.5,31 H152.5 V28 H143.5 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M155.5,92 V31 M162.5,92 V31" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M154.5,92 H163.5 V100 M154.5,100 V92" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M154.5,31 H163.5 V28 H154.5 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M29,28 H171 M29,24.4 H171" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M69.5,11.5 H130.5 V22.5 H69.5 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M37,12 H58 V22.5 H37 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M142,12 H163 V22.5 H142 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M76,17 h4" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M85,17 h4" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M94,17 h4" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M103,17 h4" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M112,17 h4" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M121,17 h4" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M25,9.7 H175" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M25,9.7 V5 H175 V9.7" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M27,5 V0.5 H173 V5" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M40,0.5 V-11 H54 V0.5" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M146,0.5 V-11 H160 V0.5" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M54,-5 H78 V-10 H122 V-5 H146" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M84,-10 V-13.5 H116 V-10" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/></g><g transform="translate(337.8830,-1.1420) scale(0.892749)" stroke-linecap="round" stroke-linejoin="round"><path d="M0,100V44 A28,36 0 0,1 56,44 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M10,100V47 A18,26 0 0,1 46,47 V100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M24,14.6a4,4 0 1,0 8,0a4,4 0 1,0 -8,0" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/></g><g transform="translate(449.2470,18.8809) scale(0.692520)" stroke-linecap="round" stroke-linejoin="round"><path d="M-3,100 L0,92 L6,88.5 L10,90 L15,85.5 L22,87 L27,84.5 L34,86.5 L40,84 L46,87.5 L50,86 L53,100" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M6,88.5 L8,96 M27,84.5 L25,93 M40,84 L43,94" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M8.3,84.4 V33.7 H41.1 V84.4" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M8.3,59 H16.4 M32.5,59 H41.1" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M16.4,81.8 V38.1 H32.5 V81.8 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M22.5,45.9 h4.4" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M22.5,55.3 h4.4" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M22.5,65.2 h4.4" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M22.5,75.3 h4.4" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M19.3,65 V80.5" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M8.3,43 Q2.5,43 2,48.5 Q1.6,53.5 5.5,54.6 Q7.3,55.2 8.3,55" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M3.5,55 Q2.2,61 2.6,68" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M41.1,43 Q46.9,43 47.4,48.5 Q47.8,53.5 43.9,54.6 Q42.1,55.2 41.1,55" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M45.9,55 Q47.2,61 46.8,68" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M5.2,33.7 V27.7 H44.2 V33.7" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M2.6,27.7 V24.1 H46.8 V27.7 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M15.1,24.1 V20.2 H34.3 V24.1" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M17.5,22.2 h2" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M21.5,22.2 h2" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M25.5,22.2 h2" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M29.5,22.2 h2" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M24.70,-15.80 L24.70,-18.60 L26.35,-18.54 L26.15,-15.75" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M27.92,-15.55 L28.36,-18.31 L29.98,-18.00 L29.35,-15.27" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M31.07,-14.79 L31.93,-17.45 L33.48,-16.89 L32.43,-14.29" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M34.05,-13.55 L35.32,-16.05 L36.77,-15.25 L35.33,-12.85" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M36.81,-11.87 L38.45,-14.13 L39.76,-13.11 L37.96,-10.97" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M39.27,-9.77 L41.25,-11.75 L42.37,-10.54 L40.26,-8.70" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M41.37,-7.31 L43.63,-8.95 L44.56,-7.58 L42.18,-6.10" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M43.05,-4.55 L45.55,-5.82 L46.25,-4.32 L43.67,-3.23" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M44.29,-1.57 L46.95,-2.43 L47.41,-0.84 L44.69,-0.17" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M45.05,1.58 L47.81,1.14 L48.01,2.78 L45.22,3.02" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M45.30,4.80 L48.10,4.80 L48.04,6.45 L45.25,6.25" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M45.05,8.02 L47.81,8.46 L47.50,10.08 L44.77,9.45" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M44.29,11.17 L46.95,12.03 L46.39,13.58 L43.79,12.53" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M43.05,14.15 L45.55,15.42 L44.75,16.87 L42.35,15.43" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M41.37,16.91 L43.63,18.55 L42.61,19.86 L40.47,18.06" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M39.27,19.37 L41.25,21.35 L40.04,22.47 L38.20,20.36" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M10.13,19.37 L8.15,21.35 L7.03,20.14 L9.14,18.30" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M8.03,16.91 L5.77,18.55 L4.84,17.18 L7.22,15.70" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M6.35,14.15 L3.85,15.42 L3.15,13.92 L5.73,12.83" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M5.11,11.17 L2.45,12.03 L1.99,10.44 L4.71,9.77" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M4.35,8.02 L1.59,8.46 L1.39,6.82 L4.18,6.58" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M4.10,4.80 L1.30,4.80 L1.36,3.15 L4.15,3.35" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M4.35,1.58 L1.59,1.14 L1.90,-0.48 L4.63,0.15" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M5.11,-1.57 L2.45,-2.43 L3.01,-3.98 L5.61,-2.93" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M6.35,-4.55 L3.85,-5.82 L4.65,-7.27 L7.05,-5.83" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M8.03,-7.31 L5.77,-8.95 L6.79,-10.26 L8.93,-8.46" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M10.13,-9.77 L8.15,-11.75 L9.36,-12.87 L11.20,-10.76" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M12.59,-11.87 L10.95,-14.13 L12.32,-15.06 L13.80,-12.68" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M15.35,-13.55 L14.08,-16.05 L15.58,-16.75 L16.67,-14.17" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M18.33,-14.79 L17.47,-17.45 L19.06,-17.91 L19.73,-15.19" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M21.48,-15.55 L21.04,-18.31 L22.68,-18.51 L22.92,-15.72" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M10.37,19.6 A20.6,20.6 0 1,1 39.03,19.6" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M13.43,19.6 A18.6,18.6 0 1,1 35.97,19.6" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M11.7,6.9 V-6.1 H19.5 V6.9" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M11.7,-2.8 H19.5 M11.7,0.5 H19.5 M11.7,3.7 H19.5" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M19.5,6.9 V-7.1 H28.1 V6.9" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M23.8,-7.1 V6.9" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M21,-3 h1.6 M25.2,-3 h1.6" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M28.1,-4 L33.8,-6.1 L39,4.8 L33.8,6.9 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M33.2,-1.5 l1.2,0.8" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M8.3,7.6 Q12,6.9 16,6.9 H40.3 V8.6 H35 Q31.2,9.5 31.2,12 V16.8 H33.8 V20.2 H15.6 V16.8 H18.2 V12 Q18.2,9.5 15,8.6 Q11,8.4 8.3,7.6 Z" fill="white" stroke="none"/><path d="M8.3,7.6 Q12,6.9 16,6.9 H40.3 V8.6 H35 Q31.2,9.5 31.2,12 V16.8 H33.8 V20.2 H15.6 V16.8 H18.2 V12 Q18.2,9.5 15,8.6 Q11,8.4 8.3,7.6 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M15.5,16 L38.5,3.8" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M12.3,14.5 L15.6,12.6 L17.6,16.1 L14.3,18 Z" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/><path d="M39.5,8.6 V9.6 M39.5,11 V12 M39.5,13.4 V14.4" fill="none" stroke="#86651C" stroke-width="0.5" vector-effect="non-scaling-stroke"/></g><path d="M0,88.83290517567058H518.4" fill="none" stroke="#86651C" stroke-width="0.4"/></svg></div>
+<div class="sky-s">上海 · 西安 · 西南 · 北京 · 阳明　五所交通大学　同源一八九六</div>  </div>
+</section>
+
+
+<section class="ads" id="s03" data-entry="08_赞助商广告#2" data-label="赞助 · 交通大学美洲校友总会、老虎国际、WGO 等">
+  <div class="ads-label">感谢支持</div>
+<article class="ad ad-wish">
+<img class="ad-logo center" src="assets/img/ba6146198027.webp" alt="交通大学美洲校友总会" style="width:110px" loading="lazy">  <div class="wish"><div class="w-小">恭祝</div><div class="w-中">交通大学南加州校友会</div><div class="w-大">八十三周年年会</div><div class="w-大">圆满成功</div><div class="w-中">共庆母校一百三十周年华诞</div></div>
+<div class="wish-motto">饮水思源 · 五校一家</div>  <div class="wish-sign">交通大学美洲校友总会　敬贺<span>Chiao-Tung University Alumni Association in America</span></div>
+</article>
+
+<article class="ad has-imgs">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/7bf4bda6493f.webp" alt="老虎国际" style="width:210px" loading="lazy" decoding="async">  </div>
+<div class="ad-imgs n1"><figure><img class="" src="assets/img/fae52ae80d7e.webp" alt="" loading="lazy" decoding="async" style="object-position:35% center"><figcaption>Metro Lakes · Dublin, Ohio</figcaption></figure></div></article>
+<article class="ad has-imgs">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/9793dbdb04ff.webp" alt="WGO Technology" style="width:154px" loading="lazy" decoding="async">  </div>
+<p class="ad-tag">让全球优秀的科技产品，在美国真正落地。</p><p class="ad-desc">WGO科技立足于美国南加州，专注于全球创新科技产品和智能生活方式。我们的产品涵盖AI智能硬件、机器人及机器狗、智能家居、AR / VR眼镜、3D打印设备、数码影像、音乐科技及创客定制产品。目前主要销售追觅、戴森、拓竹、大疆、方太等一线品牌。</p><div class="ad-imgs n1 whole"><figure><img class="" src="assets/img/80038f9a631f.webp" alt="" loading="lazy" decoding="async"></figure></div><div class="ad-links">
+<a class="ad-web" href="https://wgotechnology.com" target="_blank" rel="noopener">wgotechnology.com</a>  </div></article>
+<article class="ad has-imgs">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/37c66be3ee1f.webp" alt="SV Cleanroom" style="width:191px" loading="lazy" decoding="async">  </div>
+<p class="ad-tag">Cleanroom System Service Provider</p><p class="ad-desc">硅谷洁净室设计院专注于为半导体微电子、LED液晶显示、光电子、光伏芯片、精密机械、食品医药、生物实验室、医院手术室及航空航天等领域的企业提供洁净室解决方案。</p><dl class="ad-kv"><div><dt>服务</dt><dd>EPC 总承包：咨询 · 设计 · 施工 · 运维</dd></div><div><dt>据点</dt><dd>美国 · 墨西哥 · 中国深圳 · 越南 · 印度 · 印尼</dd></div></dl><div class="ad-imgs n2"><figure><img class="" src="assets/img/502659d820b2.webp" alt="" loading="lazy" decoding="async"></figure><figure><img class="" src="assets/img/67a1e690bb87.webp" alt="" loading="lazy" decoding="async"></figure></div><div class="ad-contact"><div><a href="tel:6263650321">(626) 365-0321</a> · <a href="mailto:atclean0208@gmail.com">atclean0208@gmail.com</a></div></div><div class="ad-links">
+<a class="ad-web" href="https://atclean.com" target="_blank" rel="noopener">atclean.com</a>  </div></article>
+</section>
+
+
+<section class="sec program" id="s04" data-entry="03_节目单" data-label="节目单">
+  <header class="ch">
+  <h2 class="ch-title">节目单</h2>
+<div class="ch-sub"><span>晚会节目</span><span>2026年11月8日 · 星期日</span><span>圣盖博喜来登酒店</span></div></header>
+
+  <section class="pg-sec">
+    <ol class="pg-list">
+      <li><time>6:00pm</time><div><span class="pg-item">晚会开始，来宾入场</span></div></li>
+      <li><time>6:10pm</time><div><span class="pg-item">开场街舞《Bad Boy》</span><span class="pg-who">高校联盟街舞队 · 指导 许小玲</span></div></li>
+      <li><time>6:15pm</time><div><span class="pg-item">主持人宣布晚会开始</span></div></li>
+    </ol>
+  </section>
+  <section class="pg-sec">
+<h3 class="pg-h"><b class="pg-num">壹</b>开场仪式</h3>    <ol class="pg-list">
+      <li><time>6:17pm</time><div><span class="pg-item">现任理事长致辞，介绍嘉宾</span><span class="pg-who">万荣根</span></div></li>
+      <li><time>6:22pm</time><div><span class="pg-item">介绍赞助单位和个人</span></div></li>
+      <li><time>6:25pm</time><div><span class="pg-item">现任会长致辞</span><span class="pg-who">何桂萍</span></div></li>
+      <li><time>6:30pm</time><div><span class="pg-item">嘉宾丁言愉、赵美心致辞并颁发贺状（待定）</span></div></li>
+      <li><time>6:35pm</time><div><span class="pg-item">交接校友会会旗，理事长见证</span></div></li>
+      <li><time>6:40pm</time><div><span class="pg-item">新任会长致辞</span><span class="pg-who">万荣根</span></div></li>
+      <li><time>6:45pm</time><div><span class="pg-item">宣读 2026 优秀校友，2027 工作团队合影</span></div></li>
+      <li><time>6:50pm</time><div><span class="pg-item">历届会长、理事长同唱一首歌</span></div></li>
+      <li><time>6:55pm</time><div><span class="pg-item">大合照</span></div></li>
+    </ol>
+  </section>
+  <section class="pg-sec">
+<h3 class="pg-h"><b class="pg-num">贰</b>晚宴</h3>    <ol class="pg-list">
+      <li><time>7:00pm</time><div><span class="pg-item">抽奖一，晚餐开始</span></div></li>
+      <li><time>7:05pm</time><div><span class="pg-item">晚餐，播放母校祝贺视频与年度活动回顾</span></div></li>
+      <li><time>7:40pm</time><div><span class="pg-item">抽奖二</span></div></li>
+    </ol>
+  </section>
+  <section class="pg-sec">
+<h3 class="pg-h"><b class="pg-num">叁</b>文艺演出 · 校友联欢</h3>    <ol class="pg-list">
+      <li><time>7:45pm</time><div><span class="pg-item">健身舞《世界波》</span><span class="pg-who">交大舞蹈队</span></div></li>
+      <li><time>7:50pm</time><div><span class="pg-item">王广成老师与观众现场互动（待确认）</span><span class="pg-who">GCW 舞蹈工作室</span></div></li>
+      <li><time>7:55pm</time><div><span class="pg-item">上交、西交 · 男声二重唱与长笛《那就是我》</span><span class="pg-who">邵莹、刘东 · 长笛 孙科涵</span></div></li>
+      <li><time>8:00pm</time><div><span class="pg-item">北京交大 · 朗诵《大写的中国》</span><span class="pg-who">陈明</span></div></li>
+      <li><time>8:05pm</time><div><span class="pg-item">抽奖三</span></div></li>
+      <li><time>8:15pm</time><div><span class="pg-item">女高音独唱《帕米尔，我的家乡多么美》</span><span class="pg-who">王君悦 · 钢琴 曾立佳</span></div></li>
+      <li><time>8:20pm</time><div><span class="pg-item">西南交大 · 新疆舞《花儿为什么这样红》</span><span class="pg-who">文玉舞队</span></div></li>
+      <li><time>8:25pm</time><div><span class="pg-item">新竹阳明交大 ·《云中月圆》卡拉 OK</span><span class="pg-who">李儼殷、林佩其</span></div></li>
+      <li><time>8:30pm</time><div><span class="pg-item">机器人表演《云端指令，具身未来》（待确认）</span><span class="pg-who">AGENTECH</span></div></li>
+      <li><time>8:50pm</time><div><span class="pg-item">大合唱《友谊地久天长》</span><span class="pg-who">全体人员</span></div></li>
+      <li><time>8:55pm</time><div><span class="pg-item">抽奖四</span></div></li>
+    </ol>
+  </section>
+</section>
+
+
+<section class="ads" id="s05" data-entry="08_赞助商广告#4" data-label="赞助 · 北美卡车运输协会、AGENTECH、美国风雷国际集团 等">
+  <div class="ads-label">感谢支持</div>
+<article class="ad">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/4c3fa863934e.webp" alt="北美卡车运输协会 NATTA" style="width:230px" loading="lazy" decoding="async">  </div>
+<p class="ad-tag big">AI 找路，专家落地</p><p class="ad-desc">人工智能供应链联盟（AI SCM Alliance）是北美卡车运输协会（NATTA）旗下品牌，连接中国工厂与北美货架，整合跨境供应链资源，以 AI 顾问支持全链协作。</p><dl class="ad-kv"><div><dt>全链</dt><dd>品牌出海 → 货代 → 清关 → 海外仓 → 卡车</dd></div><div><dt>专家</dt><dd>卡车 · 报关 · 货代 · 仓储 · 出海等专业委员会</dd></div></dl><div class="ad-list-h">四大 AI 智能顾问</div><ul class="ad-list two"><li>品略 · 品牌出海</li><li>小关 · 报关</li><li>小安 · 风控</li><li>老关 · 卡车</li></ul><div class="ad-contact"><div><a href="mailto:support@natta.org">support@natta.org</a></div></div><p class="ad-reg-note">目前免费开放 · AI 助手全程陪伴</p><div class="ad-links">
+<a class="ad-web" href="https://natta-us.org" target="_blank" rel="noopener">natta-us.org</a><a class="ad-web" href="https://natta-us.org/register" target="_blank" rel="noopener">免费注册，加入 AI 供应链联盟</a>  </div></article>
+<article class="ad">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/876e3424334f.webp" alt="AGENTECH" style="width:237px" loading="lazy" decoding="async">  </div>
+<p class="ad-tag big">用 AI 和机器人，把好奇心变成创造。</p><p class="ad-desc">通过软件工具、机器人应用和动手学习，帮你探索想法、练就技能，做出属于自己的作品。</p><dl class="ad-kv"><div><dt>服务</dt><dd>机器人 · AI 教育 · AI-First 网站 · AIGC</dd></div></dl><ol class="ad-steps"><li><i>01</i><div><b>构想 · 从好奇心出发</b><span>一个问题、一张草图，就是实验的起点。</span></div></li><li><i>02</i><div><b>搭建 · EAIC 工作台</b><span>编程、验证与改进。</span></div></li><li><i>03</i><div><b>分享 · EAIS 展示平台</b><span>把想法、过程和心得分享给创客社区。</span></div></li></ol><p class="ad-close">本届年会的现场机器人表演由 AGENTECH 提供。</p><div class="ad-links">
+<a class="ad-web" href="https://agent-tech.ai" target="_blank" rel="noopener">agent-tech.ai</a>  </div></article>
+<article class="ad">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/820d9c31a471.webp" alt="美国风雷国际集团" style="width:130px" loading="lazy" decoding="async">  </div>
+<div class="ad-subname">美国风雷国际集团 · 跨境物流</div><p class="ad-tag">16 年跨境物流 · 全美九大物流集散中心</p><p class="ad-desc">服务全球百万客户，以完善的 IT 系统和经验丰富的团队，提供从亚洲到美国的一站式国际物流服务。</p><dl class="ad-kv"><div><dt>头程运输</dt><dd>亚洲 ⇄ 美国双向空海运</dd></div><div><dt>仓储配送</dt><dd>全美仓储、退货换标、一件代发</dd></div><div><dt>快递转运</dt><dd>UPS · FedEx · USPS · DHL 特约代理</dd></div><div><dt>质检维修</dt><dd>高价值退货检测维修，快速二次销售</dd></div><div><dt>品牌出海</dt><dd>市场研究、平台入驻、社媒推广</dd></div><div><dt>逆向物流</dt><dd>国内港口综保区合规退货维修</dd></div></dl><p class="ad-desc ad-more">仓储总面积超过 150 万平尺 · 持 NVOCC 执照 · 与圣伯纳迪诺国际机场（SBD）合作 · 董事长冯烨 · 总裁王明明</p><div class="ad-contact"><div>总部 · 1367 Sherborn St, Corona, CA 92879 · <a href="tel:8883723588">(888) 372-3588</a></div></div><div class="ad-links">
+<a class="ad-web" href="https://thunderex.com" target="_blank" rel="noopener">thunderex.com</a>  </div></article>
+<article class="ad">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/71b551e26e57.webp" alt="GCW 舞蹈工作室" style="width:108px" loading="lazy" decoding="async">  </div>
+<h3 class="ad-name">舞蹈工作室<span>舞蹈 · 运动 · 生活</span></h3><p class="ad-desc">GCW 舞蹈工作室由王广成老师创立，提供舞蹈与健身课程，在尔湾、阿凯迪亚和河滨市开课，欢迎不同基础的学员前来试课。</p><img class="ad-cut" src="assets/img/39edbc5ae0ad.webp" alt="GCW 舞蹈工作室" loading="lazy" decoding="async"><dl class="ad-kv"><div><dt>课程</dt><dd>古典 · 民族 · 芭蕾 · 爵士 · 健身</dd></div><div><dt>师资</dt><dd>北京舞蹈学院毕业，曾⁠任⁠国⁠家⁠级⁠舞⁠蹈⁠考⁠级⁠考⁠官</dd></div><div><dt>开课</dt><dd>尔湾 · 阿⁠凯⁠迪⁠亚 · 河⁠滨⁠市</dd></div><div><dt>试课</dt><dd>零基础欢迎</dd></div></dl><div class="ad-contact"><div><a href="tel:9493177635">(949) 317-7635</a> · 微信 Jill1001W · 39 Shady Canyon Dr, Irvine</div></div><div class="ad-links">
+<a class="ad-web" href="https://youtube.com/@GCW" target="_blank" rel="noopener">youtube.com/@GCW</a>  </div></article>
+</section>
+
+
+<section class="sec prizes" id="s06" data-entry="04_奖品" data-label="奖品">
+  <header class="ch">
+  <h2 class="ch-title">奖品</h2>
+<div class="ch-sub"><span>年会抽奖 · 共 86 份</span></div></header>
+
+  <section class="pz-tier pz-1">
+    <h3 class="pz-h"><span>一等奖</span><em>2 份</em></h3>
+    <div class="pz-items n2">
+      <figure class="pz cut">
+        <div class="pz-pic"><img class="" src="assets/img/3a9d27d65ec3.webp" alt="王羲之字画" loading="lazy" decoding="async"></div>
+<figcaption><b>王羲之字画</b><span>书法长卷</span></figcaption>
+      </figure>
+      <figure class="pz cut">
+        <div class="pz-pic"><img class="" src="assets/img/ba5eaa241b31.webp" alt="Visa 礼品卡" loading="lazy" decoding="async"></div>
+<figcaption><b>Visa 礼品卡</b><span>$520</span></figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="pz-tier pz-2">
+    <h3 class="pz-h"><span>二等奖</span><em>1 份</em></h3>
+    <div class="pz-items n1">
+      <figure class="pz cut">
+        <div class="pz-pic"><img class="" src="assets/img/97023ff4a2e3.webp" alt="55 英寸高清电视" loading="lazy" decoding="async"></div>
+<figcaption><b>55 英寸高清电视</b><span>三星 M80H Mini LED</span></figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="pz-tier pz-3">
+    <h3 class="pz-h"><span>三等奖</span><em>4 份</em></h3>
+    <div class="pz-items n2">
+      <figure class="pz cut">
+        <div class="pz-pic"><img class="" src="assets/img/2b9074d86255.webp" alt="喜来登客房一晚" loading="lazy" decoding="async"></div>
+<figcaption><b>客房一晚</b><span>圣盖博喜来登酒店</span><em>× 2</em></figcaption>
+      </figure>
+      <figure class="pz cut">
+        <div class="pz-pic"><img class="" src="assets/img/1e4ddb2d2309.webp" alt="15.6 英寸便携显示器" loading="lazy" decoding="async"></div>
+<figcaption><b>15.6 英寸便携显示器</b><span>Lepow Z1</span><em>× 2</em></figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="pz-tier pz-4">
+    <h3 class="pz-h"><span>四等奖</span><em>20 份</em></h3>
+    <div class="pz-items n4">
+      <figure class="pz cut">
+        <div class="pz-pic"><img class="" src="assets/img/f6cb038bdf7b.webp" alt="登机箱" loading="lazy" decoding="async"></div>
+<figcaption><b>硬壳万向轮登机箱</b><span>VIPBOX</span><em>× 8</em></figcaption>
+      </figure>
+      <figure class="pz cut">
+        <div class="pz-pic"><img class="" src="assets/img/7f3f4ba17bad.webp" alt="真空封口机" loading="lazy" decoding="async"></div>
+<figcaption><b>真空封口机</b><span>FRESKO AutoMax V6</span><em>× 5</em></figcaption>
+      </figure>
+      <figure class="pz cut">
+        <div class="pz-pic"><img class="" src="assets/img/8dd503441712.webp" alt="防弹书包" loading="lazy" decoding="async"></div>
+<figcaption><b>防弹书包</b><span>Longfri</span><em>× 5</em></figcaption>
+      </figure>
+      <figure class="pz cut">
+        <div class="pz-pic"><img class="" src="assets/img/4f3b3c517563.webp" alt="电视柜" loading="lazy" decoding="async"></div>
+<figcaption><b>电视柜</b><span>Sceptre Dello II</span><em>× 2</em></figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="pz-tier pz-5">
+    <h3 class="pz-h"><span>幸运奖</span><em>59 份</em></h3>
+    <div class="pz-items n4">
+      <figure class="pz cut">
+        <div class="pz-pic"><img class="" src="assets/img/8e7ab0b92537.webp" alt="宠物饮水机" loading="lazy" decoding="async"></div>
+<figcaption><b>不锈钢宠物饮水机</b><span>Veken 3.2 L</span><em>× 10</em></figcaption>
+      </figure>
+      <figure class="pz cut">
+        <div class="pz-pic"><img class="" src="assets/img/a8f955a11a8c.webp" alt="LED 电竞鼠标" loading="lazy" decoding="async"></div>
+<figcaption><b>LED 电竞鼠标</b><span>Redragon M612</span><em>× 10</em></figcaption>
+      </figure>
+      <figure class="pz cut">
+        <div class="pz-pic"><img class="" src="assets/img/12bda887162f.webp" alt="便携冷风扇" loading="lazy" decoding="async"></div>
+<figcaption><b>便携冷风扇</b><span>BASEIN CF-006</span><em>× 9</em></figcaption>
+      </figure>
+      <figure class="pz cut">
+        <div class="pz-pic"><img class="" src="assets/img/120f29fc311e.webp" alt="竹制手机支架座" loading="lazy" decoding="async"></div>
+<figcaption><b>竹制手机支架座</b><em>× 30</em></figcaption>
+      </figure>
+    </div>
+  </section>
+</section>
+
+
+<section class="ads" id="s07" data-entry="08_赞助商广告#3" data-label="赞助 · 爱跃维、蔓藤教育、Natural 等">
+  <div class="ads-label">感谢支持</div>
+<article class="ad">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/ebfb102a2228.webp" alt="爱跃维 PiviaX" style="width:162px" loading="lazy" decoding="async">  </div>
+<p class="ad-tag big">学有所向，业有所成，志有所达。</p><p class="ad-desc">爱跃维（PiviaX）是一家连接升学规划、职业探索与长期成长的教育咨询机构。我们结合招生视角、心理学方法、行业导师经验与 AI 工具，帮助学生认识自己、明确方向，将当下的学习与申请选择，转化为面向未来的发展路径。</p><dl class="ad-kv"><div><dt>升学规划</dt><dd>美高 · 美本 · 研究生：选校、规划与文书</dd></div><div><dt>职业探索</dt><dd>行业交流与导师指导，找到适合的方向</dd></div><div><dt>背景提升</dt><dd>科研 · 竞赛 · 实践，培养表达与思辨能力</dd></div><div><dt>家庭陪伴</dt><dd>帮家长理解孩子，陪学生学会自主决策</dd></div></dl><div class="ad-sign">Beyond College. Discover Careers. Build for Life.</div><div class="ad-contact"><div>尔湾办公室 · 1 Park Plaza, Suite 325, Irvine, CA</div></div><div class="ad-links">
+<a class="ad-web" href="https://piviax.com" target="_blank" rel="noopener">piviax.com</a>  </div></article>
+<article class="ad">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/ddeee74b182a.webp" alt="蔓藤教育 MentorX" style="width:114px" loading="lazy" decoding="async">  </div>
+<p class="ad-tag big">留学生海外求职行业标杆</p><p class="ad-desc">2015 年成立，以 AI 数据系统、名企导师和全球岗位网络，提供从规划到就业的一站式求职服务。</p><div class="ad-stats"><div><b>40000+</b><span>服务学生</span></div><div><b>95%</b><span>求职成功率</span></div><div><b>4800+</b><span>名企资源</span></div><div><b>2015</b><span>创立年份</span></div></div><dl class="ad-kv"><div><dt>服务</dt><dd>海外实习 · 海外全职 · 归国求职 · 背景提升</dd></div><div><dt>工具</dt><dd>AI 简历 · 模拟面试 · 求职测评 · 岗位匹配</dd></div><div><dt>总部</dt><dd>洛杉矶 · 北京双总部，服务覆盖全球</dd></div><div><dt>创始人</dt><dd>马列伟博士 · 清华校友 · 前西门子科学家</dd></div></dl><p class="ad-close">让每个学生成功跨越校园和职场的鸿沟。</p><div class="ad-contact"><div><a href="tel:8888725134">(888) 872-5134</a> · <a href="mailto:info@mentorx.net">info@mentorx.net</a></div></div><div class="ad-links">
+<a class="ad-web" href="https://mentorx.net" target="_blank" rel="noopener">mentorx.net</a>  </div></article>
+<article class="ad has-imgs">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/20ea5b13e7f5.webp" alt="Natural Source" style="width:116px" loading="lazy" decoding="async">  </div>
+<p class="ad-tag big">健康，绝不妥协</p><p class="ad-desc">2006 年创立于加州，专注草本与膳食补充剂。</p><dl class="ad-kv"><div><dt>配方</dt><dd>千年中医草本知识 × 现代科学循证配方</dd></div><div><dt>生产</dt><dd>美国本土制造 · FDA 注册 · GMP 认证工厂</dd></div><div><dt>检测</dt><dd>独立实验室检测重金属、农残与微生物</dd></div><div><dt>产品</dt><dd>200+ 款配方：草本 · 维生素 · 益生菌 · 鱼油</dd></div></dl><div class="ad-imgs n1"><figure><img class="" src="assets/img/9b2ae12b1cc0.webp" alt="" loading="lazy" decoding="async"></figure></div><div class="ad-sign">从原料到成品，只有 100% 合格的批次才会出厂</div><div class="ad-contact"><div><a href="mailto:info@usnaturalsource.com">info@usnaturalsource.com</a></div></div><div class="ad-links">
+<a class="ad-web" href="https://usnaturalsource.com" target="_blank" rel="noopener">usnaturalsource.com</a>  </div></article>
+<article class="ad has-imgs">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/603f08ab8328.webp" alt="PacRim Engineering, Inc." style="width:145px" loading="lazy" decoding="async">  </div>
+<p class="ad-tag">土木 · 结构 · 交通工程</p><p class="ad-desc">加州工程顾问公司，在帕萨迪纳、橙市（Orange）和圣地亚哥设有办公室；业务包括土木、结构、交通工程、环境服务和施工管理，服务政府机构、交通管理部门和基础设施开发商。</p><div class="ad-imgs n1"><figure><img class="" src="assets/img/4a692f0632b0.webp" alt="" loading="lazy" decoding="async" style="object-position:50% 50%"><figcaption>洛杉矶 Expo 轻轨二期工程</figcaption></figure></div><div class="ad-contact"><div>总部 · 70 S. Lake Ave., Suite 820, Pasadena · <a href="tel:3237638700">323.763.8700</a></div></div><div class="ad-links">
+<a class="ad-web" href="https://pacrimengineering.com" target="_blank" rel="noopener">pacrimengineering.com</a>  </div></article>
+</section>
+
+
+<section class="sec review rv-专题" id="s08" data-entry="11_回顾_总会这一年" data-label="一年同行">
+  <header class="ch">
+<div class="ch-kicker">年度回顾</div>  <h2 class="ch-title">一年同行<b class="seal">壹</b></h2>
+<div class="ch-sub"><span>2025.12 – 2026.10</span></div></header>
+
+  <article class="rv-lead">
+    <figure class="rv-hero"><img class="" src="assets/img/1ae89f92d797.webp" alt="马年新春团拜暨年初理事会" loading="lazy" decoding="async" style="object-position:center 62%">
+    </figure>
+    <div class="rv-lead-t">
+<div class="rv-kick">本年亮点</div>      <div class="rv-when">2026.02.22 · 陈宏正校友家</div>
+<h3>马年新春团拜暨年初理事会</h3><blockquote>「四月八日 · 四通八达」</blockquote>      <p>五校校友欢聚一堂，胡景宇、张莉平主持。前阳明交大校长张懋中教授与夫人出席，讲述交大 4 月 8 日校庆的由来；全场为张校长唱生日歌，祝贺他获 2026 年约翰·弗里茨奖章。何桂萍会长回顾 2025 年的活动，红包抽奖把气氛推向高潮。团拜之后，万荣根理事长主持年初理事会，部署母校 130 周年校庆的筹备。</p>
+<a class="rv-more" href="events/tuanbai-2026.html">阅读全文 · 看全部照片</a>    </div>
+  </article>
+  <div class="rv-items">
+    <article class="rv-item">
+<figure><img class="" src="assets/img/be851b13b25a.webp" alt="专题讲座暨庆功宴" loading="lazy" decoding="async"></figure>      <div class="rv-item-t">
+        <div class="rv-date"><b>12.06</b><span>2025</span></div>
+        <h3>专题讲座暨庆功宴</h3>
+        <p>校友会在 Arcadia 举办税务、保险与贷款专题讲座，Meta Holdings 赞助场地，校友及朋友共同参与。何桂萍会长解读新税法对个人、家庭及企业的影响；丁言愉前会长分享年金、IRA 退休规划及长期护理保险，并分析加州车险、房险现状；James 金结合案例介绍贷款利率、房市变化与 AI 在贷款业务中的应用。讲座后，校友相聚庆祝年会圆满成功，交流近况、共忆校园时光。</p>
+      </div>
+    </article>
+    <article class="rv-item">
+<figure><img class="" src="assets/img/bb114e557724.webp" alt="AI 时代创业论坛" loading="lazy" decoding="async"></figure>      <div class="rv-item-t">
+        <div class="rv-date"><b>8.22</b><span>2026</span></div>
+        <h3>AI 时代创业论坛</h3>
+        <p>企业家俱乐部举办「AI 时代：创业的挑战与机会」线上论坛，何桂萍会长致欢迎词。张懋中分享科技趋势与创新思维；James Jin 探讨 AI 如何助力金融服务；刘颖介绍数字主权与信任网络；陈宏正以企业「数字员工」为例，讲解 AI Agent 在销售、供应链和风险控制中的应用。四位嘉宾随后与在线校友互动问答，探讨结合专业经验与 AI 的创业机会。</p>
+<a class="rv-more" href="events/ai-luntan-2026.html">阅读全文</a>      </div>
+    </article>
+    <article class="rv-item">
+<figure><img class="" src="assets/img/e8993870ce41.webp" alt="理事会暨年会筹备" loading="lazy" decoding="async"></figure>      <div class="rv-item-t">
+        <div class="rv-date"><b>8.30</b><span>2026</span></div>
+        <h3>理事会暨年会筹备</h3>
+        <p>校友会理事会回顾本年度已开展的各项校友活动，梳理财务情况，并重点讨论 11 月 8 日年会筹备方案。会议倡议校友积极参与，以资金、服务和时间等多种方式支持筹备，欢迎各地校友踊跃报名参会。会后，新老校友分享求学往事，以及在美工作与生活的点滴，在交流中增进彼此了解。校友会也期待继续搭建交流平台，邀请更多校友参与今后的活动。</p>
+      </div>
+    </article>
+  </div>
+  <section class="rv-year">
+    <h3 class="rv-year-h">这一年</h3>
+    <ol><li class=""><time>2025<b>12.14</b></time><a href="events/lianmeng-nianhui-2025.html">联盟年会</a></li><li class=""><time>2026<b>2.02</b></time><a href="events/xijiao-tuanbai-2026.html">西交团拜</a></li><li class="hi"><time>2026<b>2.22</b></time><a href="events/tuanbai-2026.html">新春团拜</a></li><li class=""><time>2026<b>3.01</b></time><a href="events/pingpang-beiyang-2026.html">北洋杯</a></li><li class=""><time>2026<b>3.15</b></time><a href="events/beijiao-taqing-2026.html">北交踏春</a></li><li class=""><time>2026<b>5.30</b></time><a href="events/wangqiu-2026.html">网球</a></li><li class=""><time>2026<b>6.20</b></time><a href="events/siyuanbei-2026.html">思源杯</a></li><li class=""><time>2026<b>6.28</b></time><a href="events/pingpang-lianmeng-2026.html">乒乓</a></li><li class=""><time>2026<b>9.06</b></time><a href="events/sandiego-dushuhui-2026.html">圣地亚哥</a></li><li class=""><time>2026<b>10.11</b></time><a href="events/songzhumei-2026.html">松竹梅</a></li><li class="end"><time>2026<b>11.08</b></time><span>八十三周年年会</span></li></ol>
+  </section>
+</section>
+
+
+<section class="sec review rv-杂志" id="s09" data-entry="12_回顾_五校分会联盟" data-label="五校一家">
+  <header class="ch">
+<div class="ch-kicker">年度回顾</div>  <h2 class="ch-title">五校一家<b class="seal">贰</b></h2>
+<div class="ch-sub"><span>五校分会 · 高校联盟</span></div></header>
+
+  <article class="rv-lead">
+    <figure class="rv-hero"><img class="" src="assets/img/c13d93584e0a.webp" alt="第 24 届松竹梅野餐会" loading="lazy" decoding="async" style="object-position:center 88%">
+    </figure>
+    <div class="rv-lead-t">
+      <div class="rv-when">2026.10.11 · Santa Fe Dam</div>
+<h3>第 24 届松竹梅野餐会</h3><blockquote>「饮水思源 · 五校一家」</blockquote>      <p>高校联盟成立十周年，近四十所高校上千位校友赴约。清晨一阵小雨没挡住热情，交大方阵高举校旗入场，口号响彻主会场；拔河队拼下季军，校友们还体验了今年新增的龙舟。营地里老校友叙旧、新校友结识前辈，不少人全家出动；适逢交大建校 130 周年，大家借此相聚，遥寄对母校的祝福。</p>
+<a class="rv-more" href="events/songzhumei-2026.html">阅读全文 · 看全部照片</a>    </div>
+  </article>
+  <div class="rv-items">
+    <article class="rv-item">
+<figure><img class="" src="assets/img/31442ad1cbb8.webp" alt="西安交大迎新春团拜" loading="lazy" decoding="async" style="object-position:center 55%"></figure>      <div class="rv-item-t">
+        <div class="rv-date"><b>2.02</b><span>2026</span></div>
+        <h3>西安交大迎新春团拜</h3>
+        <p>何桂萍会长提供场地，春艳会长、万荣根理事长策划。校友各带拿手菜，肉夹馍配饺子，饺子里还藏着硬币；大家举杯，祝福母校 130 周年。饭后还有掼蛋，欢声笑语不断。</p>
+<a class="rv-more" href="events/xijiao-tuanbai-2026.html">阅读全文</a>      </div>
+    </article>
+    <article class="rv-item">
+<figure><img class="" src="assets/img/23b707dc7244.webp" alt="北京交大踏春赏花" loading="lazy" decoding="async" style="object-position:center 80%"></figure>      <div class="rv-item-t">
+        <div class="rv-date"><b>3.15</b><span>2026</span></div>
+        <h3>北京交大踏春赏花</h3>
+        <p>李力坚会长带 20 余位校友和家属在 Chino Hills 徒步。山顶上大家手持校旗，拍下「同传一面旗」祝福视频，为母校 130 周年送上祝福。下山后一同午餐叙旧。</p>
+<a class="rv-more" href="events/beijiao-taqing-2026.html">阅读全文</a>      </div>
+    </article>
+    <article class="rv-item">
+<figure><img class="" src="assets/img/adcc700084ba.webp" alt="南加高校联盟年会" loading="lazy" decoding="async"></figure>      <div class="rv-item-t">
+        <div class="rv-date"><b>12.14</b><span>2025</span></div>
+        <h3>南加高校联盟年会</h3>
+        <p>本会获「杰出校友会奖」，张鸣、万荣根、李学、陈宏正分获联盟个人奖项。年会主题「薪火相传 · 同心致远」，近五百位嘉宾出席。该届松竹梅奖助学金资助 88 名学子。</p>
+<a class="rv-more" href="events/lianmeng-nianhui-2025.html">阅读全文</a>      </div>
+    </article>
+  </div>
+</section>
+
+
+<section class="sec review rv-赛场" id="s10" data-entry="13_回顾_赛场上的交大" data-label="活力交大">
+  <header class="ch">
+<div class="ch-kicker">年度回顾</div>  <h2 class="ch-title">活力交大<b class="seal">叁</b></h2>
+<div class="ch-sub"><span>文体俱乐部</span></div></header>
+
+  <article class="rv-lead">
+    <figure class="rv-hero"><img class="" src="assets/img/a759ca19ec34.webp" alt="第九届「交大思源杯」沙滩排球友谊赛" loading="lazy" decoding="async">
+    </figure>
+    <div class="rv-lead-t">
+      <div class="rv-when">6 月 20 日 · 长滩 Belmont Shore · 2028 奥运沙排场地</div>
+<h3>第九届「交大思源杯」沙滩排球友谊赛</h3>      <p>本会主办的品牌赛事，2017⁠ ⁠年创办，为洛杉矶申奥发声。11 支队伍、近百人同场竞技，交大舞蹈队开场助兴，交大公开一队拿下公开组季军。</p>
+<a class="rv-more" href="events/siyuanbei-2026.html">阅读全文 · 看全部照片</a>    </div>
+  </article>
+  <div class="rv-items">
+    <article class="rv-item">
+<figure><img class="" src="assets/img/1b8f4f315db3.webp" alt="排球队" loading="lazy" decoding="async"><b class="rv-res">公开组冠军</b></figure>      <div class="rv-item-t">
+        <div class="rv-date"><b>2026 年 10 月</b></div>
+        <h3>排球队</h3>
+        <p>公开组夺得冠军，常青队获得季军，两支队伍都站上领奖台。队长黄晨川也是本会品牌赛事思源杯的总召集人；6 月排球队主办第九届思源杯，交大公开一队再获公开组季军。九年来，思源杯已成为南加华人高校圈最具影响力的品牌体育赛事。常青队汇聚资深校友，展现坚持运动的热情。</p>
+      </div>
+    </article>
+    <article class="rv-item">
+<figure><img class="" src="assets/img/1bf4379663b2.webp" alt="乒乓球队" loading="lazy" decoding="async"><b class="rv-res">B 组季军 · 八强</b></figure>      <div class="rv-item-t">
+        <div class="rv-date"><b>3 月 · 6 月</b></div>
+        <h3>乒乓球队</h3>
+        <p>3 月首届「北洋杯」高手云集，队长彭华带队，倪全奋力拼下最后一场，锁定 B 组季军（赛场上还有多名退役专业球员，数百名观众到场）；6 月本会协办的联盟杯，小组赛脱颖而出，成功晋级八强。球队由近百名南加校友组成，已是高校校友赛事中的一支劲旅。</p>
+<a class="rv-more" href="events/pingpang-beiyang-2026.html">北洋杯 · 阅读全文</a><a class="rv-more" href="events/pingpang-lianmeng-2026.html">联盟杯 · 阅读全文</a>      </div>
+    </article>
+    <article class="rv-item sq">
+<figure><img class="" src="assets/img/c8fce4764274.webp" alt="网球队" loading="lazy" decoding="async"><b class="rv-res">晋级金组</b></figure>      <div class="rv-item-t">
+        <div class="rv-date"><b>5 月</b></div>
+        <h3>网球队</h3>
+        <p>第六届南加联盟杯由本会承办，北大、清华、浙大等 16 队同场。13 名队员来自洛杉矶、橙县、圣地亚哥和湾区，喊出「饮水思源交大、乘风破浪叱咤」；一线 KK 带领 Tim 拿下两场关键小组赛，力克科大、北大，晋级金组，是近年少见的佳绩，赛后何会长设宴庆功。</p>
+<a class="rv-more" href="events/wangqiu-2026.html">阅读全文</a>      </div>
+    </article>
+    <article class="rv-item">
+<figure><img class="" src="assets/img/e98115494ea5.webp" alt="舞蹈队" loading="lazy" decoding="async"><b class="rv-res">爱的主打歌</b></figure>      <div class="rv-item-t">
+        <div class="rv-date"><b>全年</b></div>
+        <h3>舞蹈队</h3>
+        <p>李玲、罗涛带队，王广成老师编排健身舞《爱的主打歌》；12 月在联盟年会上舞姿灵动、动作流畅、活力四射，点燃全场、赢得一致好评；6 月又与东谷文体舞蹈队合跳《裁判舞》，为思源杯开幕。罗涛还牵头高校联盟健身舞，参演队伍和人数都创下新高。</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<section class="ads" id="s11" data-entry="08_赞助商广告#6" data-label="赞助 · 友情赞助、QT、ACO 等">
+  <div class="ads-label">感谢支持</div>
+<article class="ad ad-names">
+  <div class="ad-kick">友情赞助 · 校友</div>
+  <div class="names"><img src="assets/img/d76210b023ed.webp" alt="何桂萍" loading="lazy"><img src="assets/img/3c7aaa484b35.webp" alt="罗涛" loading="lazy"><img src="assets/img/03ffcd4258a4.webp" alt="郭辰曦" loading="lazy"><img src="assets/img/2af725965d7d.webp" alt="李力坚" loading="lazy"></div>
+</article>
+
+<article class="ad">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/4922bd9f7f6a.webp" alt="QT Auto Repair &amp; Collision Center" style="width:70px" loading="lazy" decoding="async">  </div>
+<h3 class="ad-name">QT 汽车维修中心</h3><p class="ad-tag">Quality &amp; Trust｜品质与信任</p><p class="ad-desc">位于洛杉矶地区，专注于汽车事故维修、车身钣金修复及专业喷漆服务。</p><p class="ad-desc">从车辆事故评估、保险理赔协助，到车身修复、喷漆及交车服务，我们注重每一道工序、每一个细节。</p><div class="ad-call"><a href="tel:6263285168">626-328-5168</a></div><div class="ad-contact"><div>2305 Rosemead Blvd, South El Monte, CA 91733</div></div></article>
+<article class="ad">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/76fa31e04fd0.webp" alt="ACO Cabinets &amp; Flooring" style="width:193px" loading="lazy" decoding="async">  </div>
+<p class="ad-tag">一站式家居装修 · 专家一对一指导</p><dl class="ad-kv"><div><dt>地板</dt><dd>SPC 石塑地板 · 豪华乙烯基地板</dd></div><div><dt>特点</dt><dd>100% 防水 · 防滑 · 卡扣安装 · 低 VOC</dd></div><div><dt>橱柜</dt><dd>框架式 · 无框橱柜 · 石英石台面</dd></div><div><dt>卫浴</dt><dd>浴室柜 · 淋浴门 · 水槽 · 马桶 · 厨卫用品</dd></div></dl><div class="ad-links">
+<a class="ad-web" href="https://acoflooring.com" target="_blank" rel="noopener">acoflooring.com</a>  </div></article>
+<article class="ad">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/91f034240c50.webp" alt="ByteMelodies" style="width:158px" loading="lazy" decoding="async">  </div>
+<div class="ad-hero"><div>从工厂到货架，</div><div>中小企业的 AI 转型伙伴</div><span>扎根供应链与物流</span></div><dl class="ad-kv"><div><dt>销售增长</dt><dd>GEO 让品牌在 AI 回答里被看见 · AI-first 官网 · Bluecore 数字员工接待咨询、收集销售线索</dd></div><div><dt>风险控制</dt><dd>小关 Clarence 清关助手：HTS 归类、关税估算；小安 Sentry 申报前逐票核查单证</dd></div><div><dt>节约成本</dt><dd>AI 咨询从业务诊断到方案实施；售后邮件、员工问答交给 AI 助手</dd></div></dl><div class="ad-contact"><div><a href="mailto:support@bytemelodies.com">support@bytemelodies.com</a> · Los Angeles, California</div></div><div class="ad-links">
+<a class="ad-web" href="https://bytemelodies.com" target="_blank" rel="noopener">bytemelodies.com</a>  </div></article>
+<article class="ad">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/869feee8ba24.webp" alt="天地保险 Tony Ding Insurance" style="width:164px" loading="lazy" decoding="async">  </div>
+  <div class="ad-person">
+    <img class="" src="assets/img/5e2fecc5f4e0.webp" alt="丁言愉 Tony Ding" loading="lazy" decoding="async">
+    <div><b>丁言愉 Tony Ding</b><em>加州持牌 · Cal. Lic. #0754817</em><span>汽车 · 房屋 · 商业保险</span><span>人寿：年金 · IRA · 退休计划</span><span>健康：加州全保 · 65 岁以上老人医保 · 旅游</span><span>代理多家加州 A 级保险公司 · 精通国粤英语</span></div>
+  </div>
+<div class="ad-call"><a href="tel:6262915506">(626) 291-5506</a></div><div class="ad-contact"><div><a href="mailto:td_insurance@yahoo.com">td_insurance@yahoo.com</a></div><div>1031 E. Las Tunas Dr. #A, San Gabriel, CA 91776</div></div></article>
+<article class="ad">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/979c595a54b8.webp" alt="Walnut Natural Health Center" style="width:112px" loading="lazy" decoding="async">  </div>
+<p class="ad-tag">脊椎矫正 · 针灸 · 按摩 · 运动损伤 · 草本营养</p>  <div class="ad-person">
+    <img class="" src="assets/img/fe618e4a1ea0.webp" alt="吴曼丽医师 Dr. Manli Wu" loading="lazy" decoding="async">
+    <div><b>吴曼丽医师 Dr. Manli Wu</b><em>第三代中医 · 脊椎矫正医学博士</em><span>从事自然医学 30 余年</span><span>广州中医药大学硕士</span><span>曾任南加州健康科学大学助理教授</span></div>
+  </div>
+<div class="ad-call"><a href="tel:6268398578">(626) 839-8578</a><span>18710 Amar Rd, Walnut</span></div><div class="ad-links">
+<a class="ad-web" href="https://walnutnatural.com" target="_blank" rel="noopener">walnutnatural.com</a>  </div></article>
+<article class="ad has-imgs">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/7f43f575f903.webp" alt="Sheraton San Gabriel" style="width:140px" loading="lazy" decoding="async">  </div>
+<h3 class="ad-name">圣盖博喜来登酒店</h3><div class="ad-subname">本届年会举办地</div><p class="ad-desc">设有宴会厅与多功能活动空间，承办婚宴、年会与商务活动。</p><div class="ad-imgs n1"><figure><img class="" src="assets/img/b559069bf421.webp" alt="" loading="lazy" decoding="async"></figure></div><div class="ad-contact"><div>303 E. Valley Blvd</div><div>San Gabriel, CA 91776</div></div></article>
+<article class="ad">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/1d77668dd4f0.webp" alt="TriFortune" style="width:145px" loading="lazy" decoding="async">  </div>
+<p class="ad-desc">TriFortune专注于投资领域，积极参与优质企业与创新项目的投资，涵盖SpaceX、Varda Space、Helion等项目，秉持长期投资理念，注重价值发现与风险管理，致力于通过专业的投资研究与审慎的资产配置，追求创造长期、稳健的投资回报。</p></article>
+</section>
+
+
+<section class="sec pres" id="s12" data-entry="05_历届会长" data-label="薪火相传">
+  <header class="ch">
+  <h2 class="ch-title">薪火相传</h2>
+<div class="ch-sub"><span>历任会长 · 理事长（按任职年份）</span></div></header>
+
+  <div class="pr-origin">
+    <div class="pr-o-year">1943</div>
+    <div><div class="pr-o-names"><span>钱学森</span><span>胡声求</span><span>熊大纪</span></div></div>
+  </div>
+  <section class="pr-band">
+    <h3 class="pr-band-h">1970s</h3>
+<ul class="pr-text">
+<li><i class="pr-y">1973</i><b>余瑞礎</b><span>唐山交大 1942届</span></li><li><i class="pr-y">1976</i><b>顾凤山</b><span>上海交大 1948届</span></li><li><i class="pr-y">1978</i><b>刘新莱</b><span>新竹交大 1978届</span></li>    </ul>  </section>
+  <section class="pr-band">
+    <h3 class="pr-band-h">1980s–1990s</h3>
+<div class="pr-grid">
+      <figure class="pr-p">
+        <img class="" src="assets/img/bb7cf2eb58d5.webp" alt="张懋中" loading="lazy" decoding="async">
+        <figcaption><i class="pr-y">1982</i><b>张懋中</b><span>新竹交大 1979届</span></figcaption>
+      </figure>
+      <figure class="pr-p">
+        <img class="" src="assets/img/047250d1d403.webp" alt="陈宏正" loading="lazy" decoding="async">
+        <figcaption><i class="pr-y">1994</i><b>陈宏正</b><span>新竹交大 1979届</span><em>理事长 2016</em></figcaption>
+      </figure>
+    </div><ul class="pr-text">
+<li><i class="pr-y">1980</i><b>潘见仁</b><span>新竹交大 1979届</span></li><li><i class="pr-y">1984</i><b>朱力扬</b><span>新竹交大 1976届</span></li><li><i class="pr-y">1986</i><b>谢志中</b><span>新竹交大 1978届</span></li><li><i class="pr-y">1988</i><b>陈汉平</b><span>新竹交大 1974届</span></li><li><i class="pr-y">1990</i><b>李珊</b><span>新竹交大 1974届</span></li><li><i class="pr-y">1992</i><b>陈沅</b><span>新竹交大 1971届</span></li><li><i class="pr-y">1996</i><b>陈治宏</b><span>新竹交大 1969届</span></li><li><i class="pr-y">1998</i><b>方伟骐</b><span>新竹交大 1978届</span></li>    </ul>  </section>
+  <section class="pr-band">
+    <h3 class="pr-band-h">2000s</h3>
+<div class="pr-grid">
+      <figure class="pr-p">
+        <img class="" src="assets/img/3067d10ef4d0.webp" alt="丁言愉" loading="lazy" decoding="async">
+        <figcaption><i class="pr-y">2004</i><b>丁言愉</b><span>上海交大 1983届</span></figcaption>
+      </figure>
+      <figure class="pr-p">
+        <img class="" src="assets/img/3f65f049d520.webp" alt="何能" loading="lazy" decoding="async">
+        <figcaption><i class="pr-y">2006</i><b>何能</b><span>上海交大 1985届</span></figcaption>
+      </figure>
+      <figure class="pr-p">
+        <img class="" src="assets/img/a77af83deb29.webp" alt="颜利平" loading="lazy" decoding="async">
+        <figcaption><i class="pr-y">2008</i><b>颜利平</b><span>西南交大 1983届</span><em>理事长 2019</em></figcaption>
+      </figure>
+    </div><ul class="pr-text">
+<li><i class="pr-y">2000</i><b>朱志豪</b><span>新竹交大 1969届</span></li><li><i class="pr-y">2002</i><b>张孚威</b><span>新竹交大 1970届</span></li>    </ul>  </section>
+  <section class="pr-band">
+    <h3 class="pr-band-h">2010s</h3>
+<div class="pr-grid">
+      <figure class="pr-p">
+        <img class="" src="assets/img/f36bfbee8835.webp" alt="张巍" loading="lazy" decoding="async">
+        <figcaption><i class="pr-y">2010</i><b>张巍</b><span>西安交大 1996届</span></figcaption>
+      </figure>
+      <figure class="pr-p">
+        <img class="" src="assets/img/17af92d83fdf.webp" alt="周平" loading="lazy" decoding="async">
+        <figcaption><i class="pr-y">2012</i><b>周平</b><span>上海交大 1998届</span></figcaption>
+      </figure>
+      <figure class="pr-p">
+        <img class="" src="assets/img/70e2ab8b1012.webp" alt="蒋建良" loading="lazy" decoding="async">
+        <figcaption><i class="pr-y">2014</i><b>蒋建良</b><span>上海交大 1983届</span></figcaption>
+      </figure>
+      <figure class="pr-p">
+        <img class="" src="assets/img/81f73399d256.webp" alt="陈仲华" loading="lazy" decoding="async">
+        <figcaption><i class="pr-y">2014</i><b>陈仲华</b><span>上海交大 1986届</span><em>理事长</em></figcaption>
+      </figure>
+      <figure class="pr-p">
+        <img class="" src="assets/img/2aaa5d93cf60.webp" alt="萧强" loading="lazy" decoding="async">
+        <figcaption><i class="pr-y">2016</i><b>萧强</b><span>北京交大 1983届</span><em>理事长 2018</em></figcaption>
+      </figure>
+      <figure class="pr-p">
+        <img class="" src="assets/img/07d56e7d5e14.webp" alt="邵莹" loading="lazy" decoding="async">
+        <figcaption><i class="pr-y">2018</i><b>邵莹</b><span>上海交大 1983届</span><em>理事长 2021</em></figcaption>
+      </figure>
+    </div>  </section>
+  <section class="pr-band">
+    <h3 class="pr-band-h">2020s</h3>
+<div class="pr-grid">
+      <figure class="pr-p">
+        <img class="" src="assets/img/5fe0e78efc85.webp" alt="张鸣" loading="lazy" decoding="async">
+        <figcaption><i class="pr-y">2020</i><b>张鸣</b><span>西安交大 1984届</span><em>理事长 2023</em></figcaption>
+      </figure>
+      <figure class="pr-p">
+        <img class="" src="assets/img/54661b6e9ead.webp" alt="李学" loading="lazy" decoding="async">
+        <figcaption><i class="pr-y">2022</i><b>李学</b><span>北京交大 2002届</span></figcaption>
+      </figure>
+      <figure class="pr-p">
+        <img class="" src="assets/img/d2e0c3a54c6c.webp" alt="贾旭东" loading="lazy" decoding="async">
+        <figcaption><i class="pr-y">2024</i><b>贾旭东</b><span>北京交大 1983届</span></figcaption>
+      </figure>
+      <figure class="pr-p">
+        <img class="" src="assets/img/e6a3e3133d7c.webp" alt="何桂萍" loading="lazy" decoding="async">
+        <figcaption><i class="pr-y">2025</i><b>何桂萍</b><span>西安交大 1987届</span></figcaption>
+      </figure>
+      <figure class="pr-p">
+        <img class="" src="assets/img/dadd4d26de2e.webp" alt="万荣根" loading="lazy" decoding="async">
+        <figcaption><i class="pr-y">2027</i><b>万荣根</b><span>西安交大 1984届</span><em>理事长 2025</em></figcaption>
+      </figure>
+    </div>  </section>
+</section>
+
+
+<section class="ads" id="s13" data-entry="08_赞助商广告#5" data-label="赞助 · Longfri、GMCC、AQX 等">
+  <div class="ads-label">感谢支持</div>
+<article class="ad has-imgs">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/589e95a63dc7.webp" alt="Longfri" style="width:75px" loading="lazy" decoding="async">  </div>
+<p class="ad-tag">朗弗科技 · 寓意「长久为友，永无止境」</p><p class="ad-desc">Longfri 科技有限公司位于南加州，由两位西安交通大学校友于 2011 年共同创立。两位创始人看到了全球日益增长的防护产品需求，以及聚乙烯纤维在防弹装甲材料中的应用潜力。公司专注于制造防弹装甲，产品面向军警及民用个人安全防护领域。所用聚乙烯纤维由其中一位创始人的关联公司生产。</p><div class="ad-imgs n3 whole"><figure><img class="" src="assets/img/1a8a87885ad8.webp" alt="" loading="lazy" decoding="async"><figcaption>防弹插板</figcaption></figure><figure><img class="" src="assets/img/ba77ddc0c92b.webp" alt="" loading="lazy" decoding="async"><figcaption>防弹衣</figcaption></figure><figure><img class="" src="assets/img/78daf7d2885c.webp" alt="" loading="lazy" decoding="async"><figcaption>防弹头盔</figcaption></figure></div><div class="ad-links">
+<a class="ad-web" href="https://longfri.com" target="_blank" rel="noopener">longfri.com</a>  </div></article>
+<article class="ad">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/f65220a9ec36.webp" alt="GMCC 万通贷款" style="width:142px" loading="lazy" decoding="async">  </div>
+<div class="ad-en">Your Loans, Our Solutions!</div><p class="ad-tag">更快、更简单、更低利率的房屋贷款</p><p class="ad-desc">面向受薪人士、自雇人士、投资房买家及外籍借款人，提供购房、再融资及专项贷款方案。</p><div class="ad-stats"><div><b>$10M</b><span>大额贷款上限</span></div><div><b>3%</b><span>低收入方案最低首付</span></div><div><b>$10K</b><span>指定地区购房补助</span></div></div><dl class="ad-kv"><div><dt>购房置换</dt><dd>首次购房 · 房贷再融资 · 先买后卖</dd></div><div><dt>投资房产</dt><dd>DSCR 租金现金流贷款</dd></div><div><dt>收入核实</dt><dd>银行流水 · 损益表 · 就业证明</dd></div><div><dt>外籍买家</dt><dd>非美国公民购房贷款方案</dd></div><div><dt>低收入方案</dt><dd>最低 3% 首付，可免私人按揭保险（PMI）</dd></div><div><dt>购房补助</dt><dd>指定地区合资格买家可申请 $10,000 补助</dd></div><div><dt>其他方案</dt><dd>资产贷款 · 40% 首付免收入证明</dd></div></dl><p class="ad-desc ad-more">具体申请资格、额度及优惠条件以贷款方案条款为准。</p><div class="ad-contact"><div><a href="tel:6503407800">650-340-7800</a> · <a href="mailto:info@gmccloan.com">info@gmccloan.com</a></div><div>NMLS #254895 · CA DRE #01509029</div></div><div class="ad-links">
+<a class="ad-web" href="https://gmccloan.com" target="_blank" rel="noopener">gmccloan.com</a>  </div></article>
+<article class="ad has-imgs">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/266aa04b3e43.webp" alt="AQX Engineering, Inc." style="width:132px" loading="lazy" decoding="async">  </div>
+<p class="ad-tag">Structural, Civil &amp; MEP Engineering Design</p><p class="ad-desc">AQX 提供全方位的工程设计服务，配备结构、建筑、室内设计、室内外给排水、电气、暖通等专业人员，提供从住宅改扩建到大型商业项目的设计服务。</p><p class="ad-close">美国联邦政府、美国国家航天局及加州交通局信赖的合作伙伴。</p><div class="ad-imgs n1"><figure><img class="" src="assets/img/89965150f19d.webp" alt="" loading="lazy" decoding="async" style="object-position:50% 100%"><figcaption>Newport Beach 私人住宅项目</figcaption></figure></div><div class="ad-contact"><div>Chung Q. Xiao, S.E., PhD · <a href="tel:7146620510">(714) 662-0510</a></div><div><a href="mailto:chung@aqxeng.com">chung@aqxeng.com</a></div></div><div class="ad-links">
+<a class="ad-web" href="https://aqxeng.com" target="_blank" rel="noopener">aqxeng.com</a>  </div></article>
+<article class="ad">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/d465c373a768.webp" alt="DMG 消防设备公司" style="width:150px" loading="lazy" decoding="async"><div class="ad-badge"><span>加州执照</span><b>C-10/C-16</b><em>#1062041</em></div>  </div>
+<div class="ad-subname">消防喷淋工程 · 设计 · 检测维修</div><div class="ad-en">Your Trusted Partner in Fire Safety</div><p class="ad-tag">您值得信赖的消防安全伙伴</p><img class="ad-cut" src="assets/img/de6753b70534.webp" alt="DMG 消防设备公司" loading="lazy" decoding="async"><dl class="ad-kv"><div><dt>喷淋安装</dt><dd>湿⁠式 · 干⁠式 · 预⁠作⁠用 · 雨⁠淋 · 消⁠防⁠泵 · 抗⁠震⁠支⁠架</dd></div><div><dt>检测维修</dt><dd>五⁠年⁠检⁠测 · 防⁠回⁠流⁠装⁠置 · 特⁠殊⁠危⁠险⁠系⁠统</dd></div><div><dt>设计施工</dt><dd>系⁠统⁠设⁠计 · 水⁠力⁠计⁠算 · B⁠I⁠M · 法⁠规⁠咨⁠询 · F⁠M⁠‑⁠2⁠0⁠0</dd></div><div><dt>地下管网</dt><dd>消⁠防⁠接⁠合⁠器 · 双⁠止⁠回⁠阀 · 开⁠挖⁠回⁠填</dd></div><div><dt>服务对象</dt><dd>住⁠宅 · 商⁠业 · 工⁠业 · 医⁠疗 · 教⁠育 · 酒⁠店</dd></div></dl><div class="ad-call"><i>咨询电话</i><a href="tel:6265488663">(626) 548-8663</a></div><div class="ad-contact"><div><a href="mailto:info@dmgfire.com">info@dmgfire.com</a></div><div>2049 S Hellman Ave Ste L, Ontario, CA 91709</div></div></article>
+</section>
+
+
+<section class="sec team" id="s14" data-entry="06_团队与俱乐部" data-label="同心同行">
+  <header class="ch">
+  <h2 class="ch-title">同心同行</h2>
+<div class="ch-sub"><span>2026 年度优秀校友</span><span>2026 工作团队</span></div></header>
+
+  <section class="tg-hon">
+    <h3>优秀校友</h3><div class="tg-note">2026 年度 · 按姓氏笔画排序</div>    <ul><li>丁言愉</li><li>万荣根</li><li>王海鹏</li><li>卢培刚</li><li>刘晓笑</li><li>关宇</li><li>孙科涵</li><li>李玲</li><li>何桂萍</li><li>张鸣</li><li>张娇</li><li>张莉平</li><li>陈宏正</li><li>邵莹</li><li>罗涛</li><li>胡景宇</li><li>姜素荣</li><li>贺辞</li><li>顾屹峰</li><li>黄晨川</li><li>萧强</li><li>梁展航</li><li>颜利平</li><li>穆勃江</li></ul>
+  </section>
+  <section class="tg-team">
+    <h3>2026 工作团队</h3>
+    <dl class="tg-exec"><div class="top"><dt>会长</dt><dd>万荣根</dd></div><div class="top"><dt>理事长</dt><dd>陈宏正</dd></div><div class=""><dt>财务长</dt><dd>谢小庆</dd></div><div class=""><dt>秘书长</dt><dd>王海鹏</dd></div><div class=""><dt>新闻宣传部长</dt><dd>贺辞</dd></div><div class=""><dt>活动企划部长</dt><dd>侯毓科</dd></div></dl>
+    <h4>副会长</h4>
+    <ul class="tg-names"><li><b>孙科涵</b><span>上海</span></li><li><b>刘春燕</b><span>西安</span></li><li><b>穆勃江</b><span>西南</span></li><li><b>李力坚</b><span>北京</span></li><li><b>陈宏正</b><span>新竹</span></li><li><b>胡景宇</b><span>圣地亚哥</span></li><li><b>蒋建良</b><span>长青会</span></li></ul>
+    <h4>顾问团</h4>
+    <ul class="tg-names"><li><b>李珊</b><span>阳明</span></li><li><b>丁言愉</b><span>上交</span></li><li><b>何能</b><span>上交</span></li><li><b>颜利平</b><span>西南</span></li><li><b>周平</b><span>上交</span></li><li><b>邵莹</b><span>上交</span></li><li><b>李学</b><span>北交</span></li><li><b>张鸣</b><span>西安</span></li><li><b>贾旭东</b><span>北交</span></li><li><b>萧强</b><span>北交</span></li></ul>
+  </section>
+  <section class="tg-clubs">
+    <h3>俱乐部</h3>
+    <dl><div><dt>舞蹈队</dt><dd><b>李玲　罗涛</b></dd></div><div><dt>合唱队</dt><dd><b>邵莹</b></dd></div><div><dt>企业家俱乐部</dt><dd><b>陈宏正　萧强</b></dd></div><div><dt>排球队</dt><dd><b>黄晨川</b></dd></div><div><dt>羽毛球队</dt><dd><b>翟冬青</b></dd></div><div><dt>登山队</dt><dd><b>李力坚</b></dd></div><div><dt>高尔夫球队</dt><dd><b>李艳丽</b></dd></div><div><dt>乒乓球队</dt><dd><b>伍旭强</b></dd></div><div><dt>网球队</dt><dd><b>张永刚</b></dd></div><div><dt>校友会网站</dt><dd><b>邵莹　孙科涵</b></dd></div><div><dt>圣地亚哥分部</dt><dd><b>胡景宇　刘春燕　江山</b></dd></div></dl>
+  </section>
+</section>
+
+
+<section class="sec essays" id="s15" data-entry="校友来稿" data-label="校友来稿">
+  <header class="ch">
+  <h2 class="ch-title">校友来稿</h2>
+<div class="ch-sub"><span>校友的文字与记忆 · 2026</span></div></header>
+
+  <article class="essay" id="s15-1">
+    <div class="es-no">01</div>
+    <h3 class="es-title"><span class="nb">饮水思源，</span><span class="nb">在南加续写交大情缘</span></h3>
+    <div class="es-by has-av">
+<img class="es-av" src="assets/img/ea81318b9831.webp" alt="何桂萍" loading="lazy">      <div class="es-by-t">
+        <b>文 / 何桂萍</b>
+<span class="l1">西安交通大学 · 1987 届</span><span class="l2">南加州校友会会长 · 2025–2026</span>      </div>
+    </div>
+    <div class="es-body">
+      <p>我本科就读于西安交通大学电子工程专业，在母校求学的时光，是我人生中难以忘怀的一段记忆。“饮水思源”的校训，从踏入校园的那一刻起，便深深镌刻在我的心底。交大严谨务实的学风，不仅教会我专业知识，更塑造了我踏实坚韧的行事底色，这份精神，也一直陪伴我走过往后人生的每一段路程。</p>
+      <p>后来，我怀揣憧憬远赴美国，开启全新的生活。初到异国，语言、文化、生活环境都需要重新适应，前路充满未知与挑战。我放下原本的工科背景，重新选择发展方向，攻读会计税法硕士，一步一步考取美国以及加州注册会计师资质，努力在财税专业领域站稳脚跟。刚刚来到南加州的那段日子，人生地不熟，很多现实难题无处问询，正是交通大学南加州校友会向我伸出了援手。老校友们热心分享本地生活经验，为我解答租房、求职、报税等方方面面的实际困惑，大大小小的聚会，让我认识了一群志同道合的同胞。正是校友会大家庭的这份温暖，消解了我初来异乡的孤独感，帮助我快速融入当地生活，这份雪中送炭的情谊，我一直铭记于心，内心满是感激。</p>
+      <p>机缘之下，我深度参与到校友会的各项事务当中。在这里，不分五校之别，大家不计个人得失，只为守护这一个属于交大人的精神家园。我从普通校友做起，积极参加各类线下相聚，在一次次见面相处中，结识了许多热心奉献的学长学姐，也慢慢萌生了尽己所能回馈社群的想法。</p>
+      <p>2025年下半年，我接过会长这份沉甸甸的责任。任职之后，在万荣根理事长、全体理事和广大义工校友的鼎力支持下，我们紧锣密鼓推进各项工作。9月，我们召开理事扩大会议，大家放下繁忙的工作赶来参会，不少理事都是推掉手上繁忙的事务专程赴会，大家围绕年会、松竹梅项目等重点工作交换想法，会后安排了轻松的聚餐联谊。整场活动既有务实议事的氛围，也有老友重逢叙旧的融融暖意。后来我们还宴请张懋中前校长伉俪，席间大家漫话校史，一同追忆校友会从初创时寥寥数人，一步步发展到今日规模的历程，心生无限感慨。</p>
+      <p>同年10月的松竹梅千人野餐会，更是热闹非凡。我们的校友队伍统一着装亮相，舞蹈队员卖力表演，排球健儿奋勇拼搏。现场既有紧张激烈的赛场角逐，也有大家围坐一起，分吃肉夹馍、水果点心，说说笑笑的轻松时刻。凭借全体队员的拼搏，我们拿下排球青年组冠军、长青组亚军，拔河也拿到第三名，大家捧着奖牌，脸上满是发自内心的喜悦。11月，第82届校友会年会顺利举办，AI公益论坛上行业校友各抒己见，文艺汇演节目精彩纷呈，抽奖环节更是将现场气氛一次次推向高潮。年末我们举办税务保险贷款专题讲座，我也结合自身专业，和大家分享新税法相关知识，希望实实在在为校友排忧解难。忙碌之余，我们还一同探望盛品儒先生家属，追忆交大创办历史，传递校友之间的温情。也正是靠着所有人的齐心协力，在校友联盟年度盛典上，我们校友会斩获杰出校友会奖，多位理事义工也获得表彰，这份荣誉属于每一位默默付出的交大人。</p>
+      <p>2026年，迎来交通大学一百三十周年校庆，这是全体交大人共同的荣耀。新春团拜会上，新老校友济济一堂，老友久别重逢，互道新年祝福，现场红包飞舞，欢声笑语不绝于耳。我们顺利召开年初理事会，共同谋划校友会新一年的发展蓝图。第九届“思源杯”沙滩排球友谊赛也如期筹备推进，延续我们多年的体育传统，呼应2028洛杉矶奥运的时代契机，让大家在沙滩与海浪之间，感受运动带来的快乐。为留存校友会珍贵过往，我们面向历任理事长、会长发起校庆主题征文，收集前辈们的亲历故事。11月8日的校庆主题年会是今年的重中之重，我们特别向历届老领导发出邀请，期待新老同仁齐聚一堂，同台放声歌唱，共同祝贺母校一百三十周岁生日快乐。</p>
+      <p>担任会长之后，我愈发明白，会长二字，更多代表的是一份服务与担当，校友会的蓬勃发展，依靠的从来不是某一个人，而是无数理事、义工、校友不计回报的默默奉献。</p>
+      <p>回望来路，从西安交大的校园，到南加州的这片土地。当年初到海外，是校友会接纳、帮助了手足无措的我；如今，我也希望尽自己绵薄之力，把这份温暖继续传递下去。环境虽然改变，但“饮水思源、五校同心”的初心从未动摇。未来，我愿继续和广大校友并肩前行，守望相助，在大洋彼岸，守护好这个交大人的港湾，把交大精神代代接续传承。</p>
+<figure class="es-fig"><img class="" src="assets/img/b0fbb31ae169.webp" alt="西安交通大学校门前" loading="lazy" decoding="async"><figcaption>西安交通大学校门前</figcaption></figure>    </div>
+  </article>
+  <article class="essay" id="s15-2">
+    <div class="es-no">02</div>
+    <h3 class="es-title"><span class="nb">交大第一天</span></h3>
+    <div class="es-by has-av">
+<img class="es-av" src="assets/img/a281d6104a6f.webp" alt="丁言愉" loading="lazy">      <div class="es-by-t">
+        <b>文 / 丁言愉</b>
+<span class="l1">上海交通大学 · 1983 届</span><span class="l2">南加州校友会会长 · 2004–2005</span>      </div>
+    </div>
+    <div class="es-body">
+      <p>那一天，我们还很年轻。</p>
+      <p>那一天，我们重回了交大。</p>
+      <p>今年五校巡游第一站是上海交通大学。没有刻意的安排，我们随步跨入新上院，走进那间熟悉而陌生的教室。一瞬间，我们仿佛一起回到了从前的学生时代。有人坐到前排，有人自然地往后排走，也有人一边落座，一边和身边的老同学打起了招呼。</p>
+<figure class="es-fig"><img class="" src="assets/img/60e05e6d71f6.webp" alt="上海交通大学 · 新上院" loading="lazy" decoding="async"><figcaption>上海交通大学 · 新上院</figcaption></figure>      <p>窗外的阳光照进来，落在一排排课桌上，也落在巡访团员一张张神采飞扬的脸上。就在这时，丁言愉学长走上讲台。作为现任美国圣盖博市副市长的他，站在那里，朝大家微微一笑：</p>
+      <p>“同学们，欢迎来到上海交大！今天，是你们入学交大的第一天。”</p>
+      <p>他声音不高，却在空阔的教室里悠悠回荡，掷地有声。顿时，教室里安静下来。</p>
+      <p>丁学长像一位正在迎接新生的老师，对大家说道：“欢迎各位同学加入交通大学这个大家庭。交通大学，是东方的MIT。同学们，从今日起，当勤学不辍，笃行不怠，好好学习，天天向上。”</p>
+      <p>话音落下，教室里响起了是欢乐的笑声，和热烈的掌声。</p>
+<figure class="es-fig"><img class="" src="assets/img/99fdad6b5390.webp" alt="新上院的教室" loading="lazy" decoding="async"><figcaption>新上院的教室</figcaption></figure>      <p>那是一个轻松而有趣的场景。可是，我坐在那里却忽然有些恍惚起来。</p>
+      <p>“同学们。欢迎来到交大。”</p>
+      <p>“今天，是你们在交大的第一天。”</p>
+      <p>听到这些如此熟悉的话语，眼前的新上院仿佛慢慢模糊了。那些已经沉在岁月深处的记忆，一点一点都醒了过来。</p>
+      <p>那一年，我们还很年轻。年轻到不知道，一所学校会在一个人的生命里留下多深的印记；也不知道，那些第一次见面的同学，有一天会成为几十年后再见时，依然一眼就能认出的故人。</p>
+      <p>那是我们来到交大的第一天。提着行李走进校园，眼前的一切都是陌生的。陌生的校门，陌生的教学楼，陌生的宿舍，还有一张张同样年轻、略带拘谨、陌生的脸。</p>
+      <p>我们来自不同的地方，说着不同的口音，却从那一天起，有了一个共同的身份：交大的学生。</p>
+      <p>那时候，我们从没有想过，“交大”这两个字，会跟随我们一辈子。</p>
+      <p>那时候，一起上课，一起吃饭，一起在宿舍里聊天，一起走过校园，都是再寻常不过的日子。上课时，有人永远喜欢坐在前排，有人总爱往后面找位置；有人从头到尾认真听讲，有人直到考试临近时才忽然紧张起来。宿舍里的灯，常常亮到深夜。食堂里，总能碰见熟悉的面孔。校园里的那些路，也不知道被我们来来回回走过了多少遍。</p>
+      <p>多年以后，真正留在记忆里的，未必是哪一堂课，也未必是哪一次考试。也许，是一句玩笑，是一场宿舍里的闲聊，是几个人一起走过校园的黄昏，是课后的足球，周末的舞会。这些校园里最普通的日子，现在成为人生里最值得怀念的时光。</p>
+      <p>因为，我们见过彼此最年轻的模样。见过彼此，还没有被岁月改变的时候。</p>
+      <p>那时的我们，并不知道人生会把我们带向何方。毕业后，有人从医，有人从教，有人做科研，有人做企业， 也有人从政；有人留在国内，有人远渡重洋。曾经坐在同一间教室的年轻人，就这样沿着不同的道路，走进了各自的人生。</p>
+      <p>几十年过去，我们都经历过事业的起伏，也经历过家庭的悲欢。年轻时觉得漫长得仿佛没有尽头的岁月，如今回头看，不过是一转眼。</p>
+      <p>可是，当年坐在同一间教室的年轻人，再次相见时，一个眼神，一声熟悉的称呼，一句只有当年同学才能听懂的玩笑，就足以让几十年的时间一下子消失。</p>
+      <p>“同学”两个字之所以珍贵，是因为，在人生最年轻、最单纯的那些年里，我们曾经一起生活，一起成长，一起做过关于未来的梦。我们都有一个共同的出发点。</p>
+      <p>交大。</p>
+      <p>也许，年轻的时候，我们并不知道这所学校最终会在自己身上留下什么。后来才慢慢发现，交大带给我们的，从来不只是知识。还有一种做事情的态度。</p>
+      <p>认真，坚韧，不轻言放弃。</p>
+      <p>既仰望星空，也愿意脚踏实地。</p>
+      <p>多年以后再回首，才渐渐明白，一所大学留给她的学生的，不只是一块招牌。而是离开校园多年后，我们依然会不知不觉地，带着她教给我们的精神。</p>
+      <p>多少年过去了。我们大家又一次坐进了交大的教室。这一次，当年的年轻学生，成了今天归来的校友。</p>
+      <p>我们从上海出发，一路走过阳明交通大学、北京交通大学、西安交通大学，再到成都的西南交通大学。我们一路向南，向北，向西，也向东。城市不同，校园不同，建筑不同。可是每当走进校园的时候，总会有一种奇妙的熟悉感。因为它们有着共同的源头。</p>
+<figure class="es-fig tall"><img class="" src="assets/img/625474f1c91c.webp" alt="上海交通大学" loading="lazy" decoding="async"><figcaption>上海交通大学</figcaption></figure>      <p>南洋公学。一百三十年的岁月，让交通大学的血脉延伸到了不同的地方。山海相隔，五校同根。</p>
+      <p>真正地走过这一座座校园之后，我渐渐觉得，我们巡访的，不仅是五所交大。也是我们每一个人曾经走过的人生。</p>
+      <p>我们在校园里拍照，在教学楼前驻足，在一棵老树、一条小路、一间教室前寻找似曾相识的感觉。大家笑起来的时候，我突然觉得：我们依然是当年的我们。只是， 藏进岁月深处的青春，在这一刻，又被重新唤醒。</p>
+      <p>在新上院的那间教室里。丁学长在讲台上的那一声：“同学们。” 把我们所有人，一下子都拉回了学生时代。</p>
+      <p>我望着身边同行的校友，又望向一排排座位。那一刻，我仿佛看见两群人重叠在了一起。</p>
+      <p>一群，是今天的我们。岁月，已经在我们身上写下各自不同的人生。另一群，是当年的我们。十八、九岁。年轻， 清澈。对未来充满希望。</p>
+      <p>忽然，我很想对当年的我们说：年轻的时候，我们总觉得来日方长。总觉得以后还有很多机会。总觉得今天不过是未来许许多多普通日子中的一天。可是，当你走过人生很长的岁月以后，你会知道：有些相遇，一生只有一次。有些时光，一旦走过，就再也无法重来。而那些曾经陪你一起年轻过的人，会成为你生命中，最珍贵的一部分。</p>
+      <p>这一次五校巡访，从上海，到台北，到北京、西安，再到成都。一路走来，最后留在我心里最深的，不是哪一座建筑，也不是哪一处风景。是人、是同行的校友、是坐在教室里的老同学们。是记忆中那些永远年轻的面孔。</p>
+      <p>年轻的时候，“饮水思源”对我们来说，是写在校园里的四个字。今天再读，却忽然懂得了更多。</p>
+      <p>饮水思源。</p>
+      <p>人这一生，走得再远，都不要忘了：我们是从哪里出发的？</p>
+      <p>我们的来路，就在这里。从南洋公学走来，从交大的校园走来，从年轻时坐过的一间间教室里走来。</p>
+      <p>一百三十年，一代人走出校园，又有一代人走进来。</p>
+      <p>教室里的面孔不断改变，而交大的精神，一代一代传下去。薪火相传。</p>
+      <p>真正传下来的，不仅是知识与传统，还有人与人之间的情谊。还有很多年以后，我们依然能够回头寻找的 “青春”。</p>
+      <p>那一天，在新上院的教室里，短短几分钟的“新生”，让我们回到当年。丁言愉学长的一句：“欢迎同学们来到交通大学。”把人生几十年的岁月轻轻折叠了起来。当年的我们，和今天的我们，在那一刻重新相遇。</p>
+      <p>那是今天的交大。那也是当年的交大。</p>
+      <p>而在我们心里，我们的青春，我们人生中许多重要故事的起点，就在那一间间教室里。在一群年轻的同学中间。在那个我们第一次走进交大的日子。</p>
+      <p>那是交大的第一天。</p>
+      <p>也是很多年以后再回望时，依然让人心里一热的，我们的青春。</p>
+      <p>永远的，交大第一天。</p>
+    </div>
+  </article>
+</section>
+
+
+<section class="ads" id="s16" data-entry="08_赞助商广告#1" data-label="赞助 · 圣地亚哥校友会、Love、美盈证券">
+  <div class="ads-label">感谢支持</div>
+<article class="ad ad-chapter">
+  <div class="ad-kick">分会专页 · SAN DIEGO</div>
+  <h3 class="ad-big">圣地亚哥校友会</h3>
+  <div class="ad-chief">
+    <img class="" src="assets/img/38a0e0005b1d.webp" alt="胡景宇" loading="lazy" decoding="async">
+    <div><span class="ad-kick">会长</span><b>胡景宇</b><em>Brandon Hu</em><p>上海交通大学通信工程专业 2000 届本科，后赴美留学，2007 年获德州大学奥斯汀分校电子工程博士学位，现从事高科技半导体芯片设计。</p></div>
+  </div>
+<h4 class="ad-sub-h">这一年</h4>  <p class="ad-desc">圣地亚哥的校友常聚在一起：读书会、专业分享、校友聚会。3 月 29 日，大家在后花园相聚、结伴登山；9 月的读书会围绕 Claire Marin《我们为何渴望安稳，却又想要逃离？》聊归属感，刘律师校友分享了 Anthropic 的股权架构。</p>
+<div class="ad-imgs n2"><figure><img class="" src="assets/img/5aaccb8ddbf6.webp" alt="" loading="lazy" decoding="async" style="object-position:center 8%"><figcaption>3.29 · 后花园校友聚会</figcaption></figure><figure><img class="" src="assets/img/8c1bdfd916af.webp" alt="" loading="lazy" decoding="async" style="object-position:center 80%"><figcaption>9.06 · 读书会</figcaption></figure></div></article>
+
+<article class="ad">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/256fe77ce121.webp" alt="Love Hibachi" style="width:63px" loading="lazy" decoding="async">  </div>
+<p class="ad-tag big">一个平台，承包整场派对。</p><p class="ad-desc">Love Hibachi 是一家以互联网与 AI 技术驱动的派对聚合预约服务平台。我们以“派对”为场景入口，将餐饮宴会、演艺娱乐、灯光音响、场景美陈、桌椅租赁等分散的派对服务聚合于一个平台——让客户一次预订、全程无忧；让优质服务商获得稳定订单与数字化增长。我们正在重新定义北美家庭聚会的消费方式。</p><div class="ad-list-h">全场景派对服务</div><ul class="ad-list two"><li>餐饮宴会</li><li>主厨现场秀</li><li>演艺娱乐</li><li>灯光音响</li><li>场景美陈</li><li>桌椅租赁</li></ul><p class="ad-wishline">谨祝交通大学南加州校友会八十三周年年会圆满成功 · 恭贺母校 130 周年华诞</p><div class="ad-contact"><div><a href="tel:6192897941">(619) 289-7941</a></div></div><div class="ad-links">
+<a class="ad-web" href="https://lovehibachi.com" target="_blank" rel="noopener">lovehibachi.com</a>  </div></article>
+<article class="ad">
+  <div class="ad-head">
+<img class="ad-logo" src="assets/img/08164a14751b.webp" alt="美盈证券" style="width:240px" loading="lazy" decoding="async">  </div>
+<h3 class="ad-name">美盈证券<span>加州持牌券商及投资银行</span></h3><p class="ad-tag big">连接资本与机会，守护财富与未来。</p><ol class="ad-tiles"><li><b>财富管理</b><span>为高净值客户提供全球资产配置方案</span></li><li><b>资产管理</b><span>通过专业团队主动管理，聚焦全球优质项目与 Pre‑IPO 机会</span></li><li><b>投资交易</b><span>为客户提供美股、ETF、基金、债券等多元证券的投资交易服务</span></li><li><b>投资银行</b><span>为企业提供 IPO 上市辅导、并购重组及私募融资等资本市场解决方案</span></li><li><b>投资移民</b><span>严选 EB-5 美国投资移民项目</span></li></ol><div class="ad-contact"><div><a href="tel:9498778838">(949) 877-8838</a> · <a href="mailto:info@mysecurities.com">info@mysecurities.com</a> · FINRA / SIPC 会员</div></div><div class="ad-links">
+<a class="ad-web" href="https://mysecurities.com" target="_blank" rel="noopener">mysecurities.com</a>  </div></article>
+</section>
+
+
+<section class="ads back" id="s17" data-entry="09_封底" data-label="赞助 · 封底 松馨園">
+  <div class="ads-label">本页由何桂萍注册会计师赞助</div>
+  <img class="bk-hero" src="assets/img/8b2dd809eeb7.webp" alt="松馨園" loading="lazy" decoding="async">
+  <article class="ad bk">
+    <img class="ad-logo bk-logo" src="assets/img/e9f5b3fe73fc.webp" alt="松馨園" loading="lazy" decoding="async">
+    <h3 class="ad-name">松馨園</h3>
+    <div class="bk-open">預計 2027 年 3 月開幕</div>
+    <p class="ad-desc">坐落在奇諾，一個為銀髮雅仕打造的全新照護養身社區。</p>
+<p class="bk-close">給予銀髮雅仕　溫馨、幸福，愛與關懷</p>    <ul class="ad-list two"><li>鄰 San Antonio 醫院</li><li>30 多個醫生診所在隔壁醫療大樓</li><li>中／英專人護理</li><li>失智老人照顧與生活輔助</li><li>提供中餐服務</li><li>精品養生照顧社區</li></ul>
+    <div class="ad-call"><i>盧小姐</i><a href="tel:7149002018">714-900-2018</a></div>
+    <div class="ad-contact"><div>5592 Philadelphia St, Chino, CA 91710</div><div><a href="mailto:info@cedarblossomseniorliving.com">info@cedarblossomseniorliving.com</a></div></div>
+<a class="ad-web" href="https://cedarblossomseniorliving.com" target="_blank" rel="noopener">cedarblossomseniorliving.com</a>  </article>
+  <section class="bk-sis">
+    <h3>同系服務 · 成人日間保健中心</h3>
+    <article class="ad bk-s">
+      <img class="ad-logo sm" src="assets/img/820bfccee2d7.webp" alt="福星成人日間保健中心" loading="lazy" decoding="async">
+      <b class="bk-s-name">福星成人日間保健中心<span>Lucky Stars ADHC</span></b>
+      <p class="ad-tag">復健，護理，關懷一站到位 · 第二個溫暖的家</p>
+      <div class="ad-contact"><div>19715 Colima Rd., #B, Rowland Heights, CA 91748</div><div>朱經理 <a href="tel:9096556168">(909) 655-6168</a></div><div>MON–FRI 8:30–4</div></div>
+    </article>
+    <article class="ad bk-s">
+      <img class="ad-logo sm" src="assets/img/56659e88a88c.webp" alt="快樂日間保健中心" loading="lazy" decoding="async">
+      <b class="bk-s-name">快樂日間保健中心<span>Happy Adult Day Care</span></b>
+      <p class="ad-tag">健康同行，安心陪伴 · 長輩快樂家人安心</p>
+      <div class="ad-contact"><div>401 W. Whittier Blvd #201, La Habra, CA 90631</div><div>洪先生 <a href="tel:5622663736">(562) 266-3736</a></div><div>MON–FRI 8:30–4</div></div>
+    </article>
+  </section>
+</section>
+
+<section class="sec thanks" id="s18" data-entry="赞助鸣谢" data-label="鸣谢">
+  <header class="ch">
+  <h2 class="ch-title">鸣谢</h2>
+<div class="ch-sub"><span>感谢各位赞助商与校友对本届年会的支持</span></div></header>
+
+<figure class="thanks-wall"><img class="" src="assets/img/7d7eadc6c64c.webp" alt="赞助商鸣谢" loading="lazy" decoding="async"></figure></section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-org">交通大学南加州校友会</div>
+  <div class="foot-en">Chiao Tung University Alumni Association of Southern California</div>
+  <div class="foot-m">饮水思源 · 五校一家</div>
+  <div class="foot-y">1943 – 2026</div>
+  <a class="foot-top" href="#s00">回到封面</a>
+</footer>
+
+<script>
+(function () {
+  var btn = document.getElementById('tocBtn'), toc = document.getElementById('toc'), close = document.getElementById('tocClose');
+  var cover = document.querySelector('.cover');
+  function setOpen(o) { toc.hidden = !o; btn.setAttribute('aria-expanded', o); document.body.classList.toggle('toc-open', o); }
+  btn.addEventListener('click', function () { setOpen(toc.hidden); });
+  close.addEventListener('click', function () { setOpen(false); });
+  toc.addEventListener('click', function (e) { if (e.target.closest('a')) setOpen(false); });
+  function onScroll() { var h = cover ? cover.offsetHeight * 0.6 : 0; btn.classList.toggle('show', window.scrollY > h); }
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  /* 查看原件：在本页全屏打开整张原件（手机可双指放大、可横向滚动）；点「关闭」或按返回键关闭 */
+  var vw = document.getElementById('viewer'), vImg = document.getElementById('vwImg'), vT = document.getElementById('vwTitle');
+  var vDl = document.getElementById('vwDl'), vPdf = document.getElementById('vwPdf'), vScroll = document.getElementById('vwScroll');
+  function openV(a) {
+    vImg.src = a.dataset.view; vImg.alt = a.dataset.title; vT.textContent = a.dataset.title; vDl.href = a.dataset.view;
+    if (a.dataset.pdf) { vPdf.hidden = false; vPdf.href = a.dataset.pdf; } else { vPdf.hidden = true; }
+    vImg.classList.remove('zoom'); vw.hidden = false; vScroll.scrollTop = 0; document.body.classList.add('toc-open');
+    try { history.pushState({ viewer: 1 }, ''); } catch (e) {}
+  }
+  function closeV(fromPop) {
+    if (vw.hidden) return; vw.hidden = true; document.body.classList.remove('toc-open');
+    if (!fromPop) { try { if (history.state && history.state.viewer) history.back(); } catch (e) {} }
+  }
+  document.querySelectorAll('[data-view]').forEach(function (a) {
+    a.addEventListener('click', function (e) { e.preventDefault(); openV(a); });
+  });
+  document.getElementById('vwClose').addEventListener('click', function () { closeV(false); });
+  vImg.addEventListener('click', function () { vImg.classList.toggle('zoom'); });   // 电脑上：点一下放大到原尺寸，再点缩回
+  window.addEventListener('popstate', function () { closeV(true); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeV(false); });
+})();
+</script>
+</body>
+</html>
